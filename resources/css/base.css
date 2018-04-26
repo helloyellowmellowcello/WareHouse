@@ -231,7 +231,7 @@ nav {
   background-color: hsla(0, 0%, 93%, 1);
   border-top: 1px solid hsla(0, 0%, 85%, 1);
   padding: 0 15rem;
-  margin: 4px 0;
+  margin: 0;
 }
 
 nav a:visted {
@@ -244,10 +244,11 @@ nav a:visted {
 
 .nav__main a {
   float: left;
+  width: 9rem;
   font-size: 18px;
   text-align: center;
-  padding: 5px 16px;
-  margin: 0 20px;
+  padding: 1rem 15px;
+  margin: 0; /*20px; /* Important for vertical align on mobile phones */
   text-decoration: none;
 }
 
@@ -256,18 +257,8 @@ nav a:visted {
   overflow: hidden;
 }
 
-.dropdown__btn {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  font-size: 18px;
-  text-align: center;
-  padding: 5px 16px;
-  margin: 0 20px; /* Important for vertical align on mobile phones */
-}
-
 /* Add a background colour to navbar links on hover */
-.nav__main a:hover, .dropdown:hover dropdown__btn:hover {
+.nav__main > a:hover, .dropdown:hover {
   background-color: red;
 }
 
@@ -275,10 +266,13 @@ nav a:visted {
 .dropdown__content {
   display: none;
   position: absolute;
-  background-color: hsla(0, 0%, 98%, .8);
+  background-color: hsla(0, 0%, 98%, .9);
   width: 80%;
   left: 120px;
   top: 125px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -292,8 +286,22 @@ nav a:visted {
 .dropdown__content__row__column {
   float: left;
   width: 20%;
-  padding: 10px;
-  height: auto;
+  border-right: 1px solid #e3e3e3;
+  padding: 0 25px;
+  height: 450px;
+}
+
+#column--sale {
+  height: 145px;
+}
+
+#column--rightmost {
+  border-right: none;   
+}
+
+#column--sale--rightmost {
+  height: 145px;
+  border-right: none; 
 }
 
 .dropdown__content__row__column a {
@@ -304,7 +312,7 @@ nav a:visted {
   display: block;
 }
 
-.dropdown__content__row__column a:hover {
+.dropdown__content__row__column > a:hover {
   background-color: #ddd;
 }
 
@@ -329,46 +337,59 @@ nav a:visted {
   clear: both;
 }
 
-/* Create a Side-Dropdown for SubCategory (2nd Hierarchy) */
-.nav__sub {
-  /*position: relative;*/
-  display: /*inline-*/block;
-}
-/*
-.nav__sub i {
-  margin: 0;
-  padding: 0;
-}
-*/
-.nav__sub__content {
-  display: none;
-  background-color: lightcyan;
-  padding-left: 8px;
-}
-
-.nav__sub:hover .nav__sub__content {
-  display: block;    
-}
-
-/* Add an active class to the active dropdown button */
-.nav__sub--active {
-  background-color: green;
-  color: white;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.nav__sub a:hover {
-  background-color: #3e8e41
-}
-
-.nav__sub__content a {
-  color: black;
-  text-decoration: none;
+.column__imgblock {
   display: block;
+  position: relative;
+  width: 100%;
+  height: 145px;
+  margin-bottom: 7px;
+  overflow: hidden;
 }
 
-.nav__sub__content a:hover {
-  background-color: #ddd;
+.column__imgblock--wrapper {
+  width: 100%;
+  height: 145px;
+}
+
+.column__imgblock--wrapper img {
+  max-height: 145px;
+}
+
+.column__imgblock--mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .4);
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.column__imgblock__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+}
+
+.column__imgblock__content > hr {
+   width: 50px;
+   margin: 10px auto 15px;
+}
+
+#decorative_accents {
+  margin-top: 40px;
+}
+
+#lighting {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+#tools {
+  margin-top: 70px;
+  margin-bottom: 
 }
 
 @media only screen and (max-width: 1100px) {

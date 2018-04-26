@@ -1,0 +1,36 @@
+/* Create a Side-Dropdown for SubCategory (2nd Hierarchy) */
+.nav__sub {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__sub__content {
+  display: none;
+  background-color: lightcyan;
+  padding-left: 8px;
+}
+
+.nav__sub:hover .nav__sub__content {
+  display: block;    
+}
+
+/* Add an active class to the active dropdown button */
+.nav__sub--active {
+  background-color: green;
+  color: white;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.nav__sub a:hover {
+  background-color: #3e8e41
+}
+
+.nav__sub__content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.nav__sub__content a:hover {
+  background-color: #ddd;
+}
