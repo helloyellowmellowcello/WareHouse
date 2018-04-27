@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/sell.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
@@ -20,7 +21,11 @@
         <input type="text" name="search" placeholder="Search for items">
         <a href="" class="icon"><img src="resources/img/search.svg"></a>
       </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      <div class="menu__user">
+        <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
+        <a href="#" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
     </header>
     <nav class="nav__main">
       <div class="dropdown">
@@ -69,11 +74,11 @@
               <div class="dropdown__content__row__column" id="column--rightmost">
                 <div class="column__imgblock">
                   <a href="#">
-                    <div class="column__imgblock--wrapper"><img src="resources/img/showhouse.jpg" alt="furniture showroom">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/showroom.jpg" alt="furniture showroom">
                     </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
-                        <label>Visit our ShowHouse</label>
+                        <label>Visit our Showroom</label>
                         <hr>
                         <p>book your visit</p>
                       </div>
@@ -266,29 +271,35 @@
     <!-- Sell Product Form -->
 
     <div id="main" class="sell">
-      <h3>Sell</h3>
+      <h3>Sell to us</h3>
       <form>
         <div id="name" class="field">
           <label for="name">Product Name</label>
-          <input type="text" name="name" placeholder="Name of product">
+            <input type="text" name="name" placeholder="Name of product to be sold" required="required">
         </div>
         <div id="price" class="field">
           <label for="price">Price</label>
-          <input type="number" name="price">
+          <div class="InputAddOn">
+            <span class="sgd">S$</span>
+            <input type="number" class="price--format InputAddOn__field" name="price" value="0.00" min=".01" step="any" placeholder="Price per unit" maxlength="15" required="required">
+          </div>
         </div>
         <div id="quantity" class="field">
-          <label for="quantity">Quantity</label>
-          <select name="quantity">
-            <option value="100"><100</option>
-            <option value="200">100-200</option>
-            <option value="300">200-300</option>
-            <option value="400">300-400</option>
-            <option value="500">>500</option>
-          </select>
+          <label for="quantity">Quantity to sell</label>
+          <div class="InputAddOn">
+            <select name="quantity" class="InputAddOn__select" required="required">
+              <option value="100"><100</option>
+              <option value="200">100-200</option>
+              <option value="300">200-300</option>
+              <option value="400">300-400</option>
+              <option value="500">>500</option>
+            </select>
+            <!--<button class="InputAddOn__sortdown"><i class="fas fa-sort-down"></i></button>-->
+          </div>
         </div>
         <div id="description" class="field">
           <label for="description">Description</label>
-          <textarea type="text" name="description" placeholder="Description of product"></textarea>
+            <textarea type="text" name="description" placeholder="Type your Product Description here..."></textarea>
         </div>
         <a href="#" class="button" id="submit">Submit</a>
       </form>
@@ -312,7 +323,7 @@
           <h4>Let us help you</h4>
             <a href="#">Contact us</a>
             <a href="#">FAQ</a>
-            <a href="#">Our ShowHouse</a>
+            <a href="#">Our Showroom</a>
             <a href="#">Delivery</a>
             <a href="#">Warranty &amp; Returns</a>
           </li>

@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/jobs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
@@ -19,7 +20,11 @@
         <input type="text" name="search" placeholder="Search for items">
         <a href="" class="icon"><img src="resources/img/search.svg"></a>
       </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      <div class="menu__user">
+        <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
+        <a href="#" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
     </header>
     <nav class="nav__main">
       <div class="dropdown">
@@ -68,11 +73,11 @@
               <div class="dropdown__content__row__column" id="column--rightmost">
                 <div class="column__imgblock">
                   <a href="#">
-                    <div class="column__imgblock--wrapper"><img src="resources/img/showhouse.jpg" alt="furniture showroom">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/showroom.jpg" alt="furniture showroom">
                     </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
-                        <label>Visit our ShowHouse</label>
+                        <label>Visit our Showroom</label>
                         <hr>
                         <p>book your visit</p>
                       </div>
@@ -270,13 +275,28 @@
       <!-- Job Search Bar -->
 
       <form>
-        <div id="name" class="field">
-          <label for="name">Product Name</label>
-          <input type="text" name="name" placeholder="Name of product">
+        <div id="department" class="field">
+          <label for="department">Department</label>
+            <select name="department" placeholder="Select a department">
+              <option>Digital Acquisition</option>
+              <option>Human Resources</option>
+              <option>Research &amp; Development</option>
+              <option>Showroom Experience</option>
+              <option>Technology</option>
+            </select>
         </div>
-        <div id="name" class="field">
-          <label for="name">Product Name</label>
-          <input type="text" name="name" placeholder="Name of product">
+        <div id="position" class="field">
+          <label for="Position">Position</label>
+          <input type="text" name="position" placeholder="Key in a position name">
+        </div>
+        <div id="city" class="field">
+          <label for="city">City</label>
+            <select name="city" placeholder="Select a city">
+              <option>Jackson, MI</option>
+              <option>Los Angeles, CA</option>
+              <option>Houston, TX</option>
+              <option>New York, NY</option>
+            </select>
         </div>
         <a href="#" class="button">Go</a>
       </form>
@@ -287,38 +307,38 @@
       <div class="job-list">
         <div class="job">
           <h4>Director, Showroom Experience</h4>
-          <span>New York, NY</span>
+          <span>Los Angeles, CA</span>
         </div>
         <div class="job">
           <h4>Senior Manager, Showroom Experience</h4>
-          <span>New York, NY</span>
+          <span>Houston, TX</span>
         </div>
         <div class="job">
-          <h4>Executive Assistant</h4>
-          <span>New York, NY</span>
+          <h4>Executive Assistant, Human Resources</h4>
+          <span>Jackson, MI</span>
         </div>
         <div class="job">
           <h4>Marketing Manager, Digital Acquisition</h4>
+          <span>Jackson, MI</span>
+        </div>
+        <div class="job">
+          <h4>Seniore Software Engineer, Technology</h4>
           <span>New York, NY</span>
         </div>
         <div class="job">
-          <h4>Seniore Software Engineer</h4>
+          <h4>Principal Researcher, Research &amp; Development</h4>
+          <span>Jackson, MI</span>
+        </div>
+        <div class="job">
+          <h4>Software Engineer, Technology</h4>
           <span>New York, NY</span>
         </div>
         <div class="job">
-          <h4>Principal Researcher</h4>
+          <h4>Staff Engineer, Technology</h4>
           <span>New York, NY</span>
         </div>
         <div class="job">
-          <h4>Software Engineer, Campus Recruiter</h4>
-          <span>New York, NY</span>
-        </div>
-        <div class="job">
-          <h4>Staff Engineer</h4>
-          <span>New York, NY</span>
-        </div>
-        <div class="job">
-          <h4>Director of Data Engineering</h4>
+          <h4>Director of Data Engineering, Technology</h4>
           <span>New York, NY</span>
         </div>
       </div>
@@ -343,7 +363,7 @@
           <h4>Let us help you</h4>
             <a href="#">Contact us</a>
             <a href="#">FAQ</a>
-            <a href="#">Our ShowHouse</a>
+            <a href="#">Our Showroom</a>
             <a href="#">Delivery</a>
             <a href="#">Warranty &amp; Returns</a>
           </li>

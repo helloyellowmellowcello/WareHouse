@@ -75,6 +75,7 @@ select {
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px 20px;
   margin-bottom: 3.75rem;
 }
 
@@ -122,6 +123,8 @@ select {
 .field {
   display: flex;
   flex-direction: column;
+  padding-bottom: 1.25rem;
+  padding-right: .75rem;
 }
 
 .field label {
@@ -182,7 +185,7 @@ header {
   display: grid;
   grid-template-columns: 22rem 1fr 22rem;
   align-items: center;
-  padding: .75rem 5rem;
+  padding: .75rem 2rem .5rem 5rem;
   font-size: inherit;
   background-color: hsla(0, 0%, 93%, 1);
 }
@@ -211,16 +214,20 @@ header {
   vertical-align: middle;
 }
 
-.cart {
+.menu__user {
   justify-self: end;
   display: flex;
   align-items: center;
   padding: .875rem 1rem;
-  border-radius: 54px;
+  /*background-color: green;*/
 }
 
-.cart img {
-  padding-left: .625rem;
+.menu__user i {
+  padding-left: 1.25rem;
+}
+
+.menu__user--icon {
+  color: #c4c4c4;
 }
 
 nav {
@@ -269,7 +276,7 @@ nav a:visted {
   background-color: hsla(0, 0%, 98%, .9);
   width: 80%;
   left: 120px;
-  top: 125px;
+  top: 130px;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
