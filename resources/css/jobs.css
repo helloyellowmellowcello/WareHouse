@@ -4,7 +4,7 @@
 }
 
 .jobs {
-  padding: 3.75rem 11.75rem 7.5625rem 11.75rem;
+  padding: 3.75rem 7.75rem 7.5625rem 7.75rem;
 }
 
 .jobs h3 {
@@ -14,14 +14,16 @@
 
 form {
   display: grid;
-  grid-template-columns: repeat(2, 2fr) 1fr;
+  grid-template-columns: repeat(2, 2fr) 1fr .5fr;
   align-items: flex-end;
   margin-bottom: 3.125rem;
 }
 
 #main form .button {
-  height: fit-content;
-  padding: 1.14rem 0;
+  width: 75px;
+  padding: 0.875rem 0;
+  margin-left: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .job-list {

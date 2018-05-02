@@ -1,0 +1,73 @@
+.product__list {
+  display: grid;
+  min-width: 1189px;
+  grid-template-areas: 'living-room entryway dining-room'
+                       'kitchen entryway bedroom'
+                       'officestorage bundles bundles'
+                       'patio bundles bundles';
+}
+
+#living-room {
+  grid-area: living-room;
+}
+
+#entryway {
+  grid-area: entryway;
+}
+
+#dining-room {
+  grid-area: dining-room;
+}
+
+#kitchen {
+  grid-area: kitchen;
+}
+
+#bedroom {
+  grid-area: bedroom;
+}
+
+#officestorage {
+  grid-area: officestorage;
+}
+
+#patio {
+  grid-area: patio;
+}
+
+#bundles {
+  grid-area: bundles;
+  position: relative;
+}
+
+.button--cta, .product__list__category h2, .button--cta, .product__list__category h3 {
+  position: absolute;
+  z-index: 300;
+}
+
+.product__list__category h2 {
+  top: 25%;
+  left: 5%;
+  font-size: 3rem;
+  font-family: 'Lora', serif;
+}
+
+.product__list__category h3 {
+  top: 38%;
+  left: 10%;
+  line-height: 1.8rem;
+}
+
+.button--cta {
+  top: 55%;
+  left: 33%;
+}
+
+#bundles:hover .button--cta {
+  transition: .5s linear;
+  transform: scale(1.1);
+  color: var(--natural-white);
+  border: 8px double var(--vivid-white);
+  text-decoration: underline;
+  cursor: pointer;
+}

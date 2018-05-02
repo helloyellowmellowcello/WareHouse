@@ -4,6 +4,7 @@
   <title>WareHouse</title>
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/furniture.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
@@ -13,11 +14,11 @@
 
     <header>
       <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
+        <a href="index.html"><img src="resources/img/warehouse-logo.svg" class="logo--background"></a>
       </div>
       <div class="search-bar">
         <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <a href="#" class="icon"><img src="resources/img/search.svg"></a>
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
@@ -64,10 +65,14 @@
                   <a href="#"><h4>Office Chairs</h4></a>
                   <a href="#"><h4>Bookshelves</h4></a>
                   <a href="#"><h4>Office Storage</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Seating &amp; Swings</h4></a>
+                  <a href="#"><h4>Surfaces</h4></a>
+                  <a href="#"><h4>Sheds</h4></a>
                 <a href="#"><h3>Bundle &amp; Save</h3></a>
-                  <a href="#"><h4>Living Room Bundles</h4></a>
-                  <a href="#"><h4>Dining Room Bundles</h4></a>
-                  <a href="#"><h4>Bedroom Bundles</h4></a>
+                  <a href="#"><h4>Living Room</h4></a>
+                  <a href="#"><h4>Dining Room</h4></a>
+                  <a href="#"><h4>Bedroom</h4></a>
               </div>
               <div class="dropdown__content__row__column" id="column--rightmost">
                 <div class="column__imgblock">
@@ -135,21 +140,23 @@
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
-                  <a href="#"><h4>Bedsheets &amp; Duvet Covers</h4></a>
-                  <a href="#"><h4>Pillows, Bolsters &amp; Duvets</h4></a>
-                  <a href="#"><h4>Mattresses &amp; Pillow Protectors</h4></a>
+                  <a href="#"><h4>Bedsheets &amp; Duvets</h4></a>
+                  <a href="#"><h4>Pillows &amp; Bolsters</h4></a>
+                  <a href="#"><h4>Mattresses</h4></a>
                 <a href="#"><h3>Bathroom</h3></a>
                   <a href="#"><h4>Towels &amp; Bath Mats</h4></a>
-                  <a href="#"><h4>Bathroom Accessories</h4></a>
+                  <a href="#"><h4>Accessories</h4></a>
                   <a href="#"><h4>Laundry Baskets</h4></a>
-              </div>
-              <div class="dropdown__content__row__column">
                 <a href="#"><h3>Dining Room</h3></a>
                   <a href="#"><h4>Table &amp; Drink Ware</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
                 <a href="#"><h3>Kitchen</h3></a>
                   <a href="#"><h4>Cookware &amp; Bakeware</h4></a>
                   <a href="#"><h4>Kitchen Organisers</h4></a>
                   <a href="#"><h4>Kitchen Home Cleaning</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Accessories</h4></a>
                 <div class="column__imgblock" id="decorative_accents">
                   <a href="#">
                     <div class="column__imgblock--wrapper"><img src="resources/img/decorative_accents.jpg" alt="botanical pots of succulents">
@@ -178,7 +185,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="column__imgblock" id="lighting">
+                <div class="column__imgblock" id="tools">
                   <a href="#">
                     <div class="column__imgblock--wrapper"><img src="resources/img/tools.jpg" alt="workman tools on a table">
                     </div>
@@ -197,12 +204,12 @@
       </div>
       <a href="#">Collections</a>
       <div class="dropdown">
-          <a href="deals.html">Sale</a>
+          <a href="sale.html">Sale</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
-                  <a href="deals.html">
+                  <a href="sale.html">
                     <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
@@ -256,7 +263,7 @@
                               <hr>
                               <p>final markdowns</p>
                           </div>
-                      </div>
+                    </div>
                     </a>
                 </div>
               </div>
@@ -269,82 +276,101 @@
     <!-- Products Section -->
 
     <div id="main" class="product-list-section">
-      <h2>All Products</h2>
-      <div class="product-list">
-        <a href="living.html" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/living-room.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Living Room</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/bedroom.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Bedroom</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/bathroom.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Bathroom</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/dining-room.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Dining Room</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/kitchen.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Kitchen</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/lighting.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Lighting</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/office.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Office + Storage</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/patio.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Patio</h3>
-          </div> -->
-        </a>
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/products/tools.jpg">
-          </div>
-          <!-- <div class="description">
-            <h3>Tools</h3>
-          </div> -->
-        </a>
+      <h1>Furniture</h1>
+      <div class="product__list">
+        <div id="living-room" class="product__list__category">
+          <a href="living.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/living-room.jpg" alt="living room">
+            </div>
+          </a>
+          
+        </div>
+        <div id="entryway" class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/entryway.jpg" alt="entryway">
+            </div>
+          </a>
+            
+        </div>
+        <div id="dining-room"class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/dining-room.jpg" alt="dining room">
+            </div>
+          </a>
+          
+        </div>
+        <div id="kitchen"class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/kitchen.jpg" alt="kitchen">
+            </div>
+          </a>
+            
+        </div>
+        <div id="bedroom" class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/bedroom.jpg" alt="bedroom">
+            </div>
+          </a>
+            
+        </div>
+        <div id="officestorage" class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/office.jpg" alt="office and storage">
+            </div>
+          </a>
+            
+        </div>
+        <div id="patio" class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/patio.jpg" alt="patio">
+            </div>
+          </a>
+            
+        </div>
+        <div id="bundles" class="product__list__category">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <img src="resources/img/categories/bundles.jpg" alt="bundle and save">
+            </div>
+          </a>
+          <h2>Bundle Up &amp; Save More</h2>
+          <h3>Extra 20% off your 2nd item with any of our bundle combos!</h3>
+          <button class="button--cta">Shop now</button>
+            
+        </div>
+          
       </div>
+        
       <a href="#" class="button">View All</a>
+        
     </div>
 
     <!-- Footer -->

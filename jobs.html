@@ -14,11 +14,11 @@
 
     <header>
       <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
+        <a href="index.html"><img src="resources/img/warehouse-logo.svg" class="logo--background"></a>
       </div>
       <div class="search-bar">
         <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <a href="#" class="icon"><img src="resources/img/search.svg"></a>
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
@@ -65,10 +65,14 @@
                   <a href="#"><h4>Office Chairs</h4></a>
                   <a href="#"><h4>Bookshelves</h4></a>
                   <a href="#"><h4>Office Storage</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Seating &amp; Swings</h4></a>
+                  <a href="#"><h4>Surfaces</h4></a>
+                  <a href="#"><h4>Sheds</h4></a>
                 <a href="#"><h3>Bundle &amp; Save</h3></a>
-                  <a href="#"><h4>Living Room Bundles</h4></a>
-                  <a href="#"><h4>Dining Room Bundles</h4></a>
-                  <a href="#"><h4>Bedroom Bundles</h4></a>
+                  <a href="#"><h4>Living Room</h4></a>
+                  <a href="#"><h4>Dining Room</h4></a>
+                  <a href="#"><h4>Bedroom</h4></a>
               </div>
               <div class="dropdown__content__row__column" id="column--rightmost">
                 <div class="column__imgblock">
@@ -136,21 +140,23 @@
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
-                  <a href="#"><h4>Bedsheets &amp; Duvet Covers</h4></a>
-                  <a href="#"><h4>Pillows, Bolsters &amp; Duvets</h4></a>
-                  <a href="#"><h4>Mattresses &amp; Pillow Protectors</h4></a>
+                  <a href="#"><h4>Bedsheets &amp; Duvets</h4></a>
+                  <a href="#"><h4>Pillows &amp; Bolsters</h4></a>
+                  <a href="#"><h4>Mattresses</h4></a>
                 <a href="#"><h3>Bathroom</h3></a>
                   <a href="#"><h4>Towels &amp; Bath Mats</h4></a>
-                  <a href="#"><h4>Bathroom Accessories</h4></a>
+                  <a href="#"><h4>Accessories</h4></a>
                   <a href="#"><h4>Laundry Baskets</h4></a>
-              </div>
-              <div class="dropdown__content__row__column">
                 <a href="#"><h3>Dining Room</h3></a>
                   <a href="#"><h4>Table &amp; Drink Ware</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
                 <a href="#"><h3>Kitchen</h3></a>
                   <a href="#"><h4>Cookware &amp; Bakeware</h4></a>
                   <a href="#"><h4>Kitchen Organisers</h4></a>
                   <a href="#"><h4>Kitchen Home Cleaning</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Accessories</h4></a>
                 <div class="column__imgblock" id="decorative_accents">
                   <a href="#">
                     <div class="column__imgblock--wrapper"><img src="resources/img/decorative_accents.jpg" alt="botanical pots of succulents">
@@ -179,7 +185,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="column__imgblock" id="lighting">
+                <div class="column__imgblock" id="tools">
                   <a href="#">
                     <div class="column__imgblock--wrapper"><img src="resources/img/tools.jpg" alt="workman tools on a table">
                     </div>
@@ -198,12 +204,12 @@
       </div>
       <a href="#">Collections</a>
       <div class="dropdown">
-          <a href="deals.html">Sale</a>
+          <a href="sale.html">Sale</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
-                  <a href="deals.html">
+                  <a href="sale.html">
                     <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
@@ -257,7 +263,7 @@
                               <hr>
                               <p>final markdowns</p>
                           </div>
-                      </div>
+                    </div>
                     </a>
                 </div>
               </div>
@@ -266,7 +272,7 @@
       </div>
       <a href="about.html">Our Story</a>
     </nav>
-
+    
     <!-- Job List Section -->
 
     <div id="main" class="jobs">
@@ -278,11 +284,16 @@
         <div id="department" class="field">
           <label for="department">Department</label>
             <select name="department" placeholder="Select a department">
+              <option>Select a department..</option>
+              <option>Business Development</option>
+              <option>Customer Happiness</option>
               <option>Digital Acquisition</option>
               <option>Human Resources</option>
-              <option>Research &amp; Development</option>
+              <option>Operations</option>
+              <option>Product Development</option>
               <option>Showroom Experience</option>
               <option>Technology</option>
+              <option>User Experience</option>
             </select>
         </div>
         <div id="position" class="field">
@@ -292,10 +303,21 @@
         <div id="city" class="field">
           <label for="city">City</label>
             <select name="city" placeholder="Select a city">
+              <option>Select a city..</option>
               <option>Jackson, MI</option>
-              <option>Los Angeles, CA</option>
-              <option>Houston, TX</option>
+              <option>Silicon Valley, CA</option>
+              <option>Cedar Rapids, IA</option>
+              <option>Chicago, IL</option>
+              <option>Idianapolis, IN</option>
+              <option>Wichita, KS</option>
+              <option>Minneapolis, MN</option>
+              <option>Springfield, MO</option>
+              <option>Fargo, ND</option>
+              <option>Omaha, NE</option>
+              <option>Cleveland, OH</option>
               <option>New York, NY</option>
+              <option>Sioux Falls, SD</option>
+              <option>Madison, WI</option>
             </select>
         </div>
         <a href="#" class="button">Go</a>
@@ -307,26 +329,26 @@
       <div class="job-list">
         <div class="job">
           <h4>Director, Showroom Experience</h4>
-          <span>Los Angeles, CA</span>
+          <span>Chicago, IL</span>
         </div>
         <div class="job">
           <h4>Senior Manager, Showroom Experience</h4>
-          <span>Houston, TX</span>
+          <span>Springfield, MO</span>
         </div>
         <div class="job">
           <h4>Executive Assistant, Human Resources</h4>
-          <span>Jackson, MI</span>
+          <span>Cleveland, OH</span>
         </div>
         <div class="job">
           <h4>Marketing Manager, Digital Acquisition</h4>
           <span>Jackson, MI</span>
         </div>
         <div class="job">
-          <h4>Seniore Software Engineer, Technology</h4>
-          <span>New York, NY</span>
+          <h4>Senior Software Engineer, Technology</h4>
+          <span>Silicon Valley, CA</span>
         </div>
         <div class="job">
-          <h4>Principal Researcher, Research &amp; Development</h4>
+          <h4>Principal Researcher, Product Development</h4>
           <span>Jackson, MI</span>
         </div>
         <div class="job">
@@ -339,7 +361,7 @@
         </div>
         <div class="job">
           <h4>Director of Data Engineering, Technology</h4>
-          <span>New York, NY</span>
+          <span>Silicon Valley, CA</span>
         </div>
       </div>
       <a href="#" class="button" id="see-all-jobs">See All Open Jobs</a>

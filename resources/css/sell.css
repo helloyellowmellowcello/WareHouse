@@ -15,7 +15,7 @@
 form {
   display: grid;
   min-width: 800px;
-  grid-template-areas: 'name name name name'
+  grid-template-areas: 'name name . .'
                        'price price quantity quantity'
                        'description description description description'
                        '. . . submit';
@@ -23,20 +23,17 @@ form {
 }
 
 form input {
-  border: 1px solid #ccc;
   width: 100%;
 }
 
 select {
   background-color: hsla(0, 0%, 100%, 1);
-  border: 1px solid #ccc;
   font-size: inherit;
   display: block;
 }
 
 textarea {
   min-height: 5rem;
-  border: 1px solid #ccc;
   font-size: inherit;
 }
 

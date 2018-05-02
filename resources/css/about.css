@@ -7,13 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: inherit;
   font-stretch: condensed;
   color: hsla(0, 100%, 100%, 1);
 
 }
 
-.about .information {
+.about__story {
   padding: 3.75rem 20% 6.75rem 20%;
   color: hsla(0, 0%, 29%, 1);
 }
@@ -29,7 +28,33 @@
   line-height: 1.8;
 }
 
-.about .join {
+.icon-stack > div {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+#icon-stack-standout {
+  color: #f8f7ed;
+}
+
+#fa-cogs--position {
+  left: -30%;
+  bottom: 50%;
+}
+
+#fa-paint-brush--position {
+  top: 20%;
+  left: 25%;
+}
+
+#fa-calendar-check--position {
+  top: 40%;
+  left: 60%;
+}
+
+.join {
   display: grid;
   justify-items: center;
   padding: 1.5rem 0;

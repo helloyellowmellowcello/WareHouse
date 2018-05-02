@@ -13,10 +13,11 @@
 
     <header>
       <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
+        <a href="index.html"><img src="resources/img/warehouse-logo.svg" class="logo--background"></a>
       </div>
       <div class="search-bar">
         <input type="text" name="search" placeholder="Search for items">
+        <a href="#" class="icon"><img src="resources/img/search.svg"></a>
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
@@ -63,10 +64,14 @@
                   <a href="#"><h4>Office Chairs</h4></a>
                   <a href="#"><h4>Bookshelves</h4></a>
                   <a href="#"><h4>Office Storage</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Seating &amp; Swings</h4></a>
+                  <a href="#"><h4>Surfaces</h4></a>
+                  <a href="#"><h4>Sheds</h4></a>
                 <a href="#"><h3>Bundle &amp; Save</h3></a>
-                  <a href="#"><h4>Living Room Bundles</h4></a>
-                  <a href="#"><h4>Dining Room Bundles</h4></a>
-                  <a href="#"><h4>Bedroom Bundles</h4></a>
+                  <a href="#"><h4>Living Room</h4></a>
+                  <a href="#"><h4>Dining Room</h4></a>
+                  <a href="#"><h4>Bedroom</h4></a>
               </div>
               <div class="dropdown__content__row__column" id="column--rightmost">
                 <div class="column__imgblock">
@@ -134,21 +139,23 @@
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
-                  <a href="#"><h4>Bedsheets &amp; Duvet Covers</h4></a>
-                  <a href="#"><h4>Pillows, Bolsters &amp; Duvets</h4></a>
-                  <a href="#"><h4>Mattresses &amp; Pillow Protectors</h4></a>
+                  <a href="#"><h4>Bedsheets &amp; Duvets</h4></a>
+                  <a href="#"><h4>Pillows &amp; Bolsters</h4></a>
+                  <a href="#"><h4>Mattresses</h4></a>
                 <a href="#"><h3>Bathroom</h3></a>
                   <a href="#"><h4>Towels &amp; Bath Mats</h4></a>
-                  <a href="#"><h4>Bathroom Accessories</h4></a>
+                  <a href="#"><h4>Accessories</h4></a>
                   <a href="#"><h4>Laundry Baskets</h4></a>
-              </div>
-              <div class="dropdown__content__row__column">
                 <a href="#"><h3>Dining Room</h3></a>
                   <a href="#"><h4>Table &amp; Drink Ware</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
                 <a href="#"><h3>Kitchen</h3></a>
                   <a href="#"><h4>Cookware &amp; Bakeware</h4></a>
                   <a href="#"><h4>Kitchen Organisers</h4></a>
                   <a href="#"><h4>Kitchen Home Cleaning</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Accessories</h4></a>
                 <div class="column__imgblock" id="decorative_accents">
                   <a href="#">
                     <div class="column__imgblock--wrapper"><img src="resources/img/decorative_accents.jpg" alt="botanical pots of succulents">
@@ -177,7 +184,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="column__imgblock" id="lighting">
+                <div class="column__imgblock" id="tools">
                   <a href="#">
                     <div class="column__imgblock--wrapper"><img src="resources/img/tools.jpg" alt="workman tools on a table">
                     </div>
@@ -196,12 +203,12 @@
       </div>
       <a href="#">Collections</a>
       <div class="dropdown">
-          <a href="deals.html">Sale</a>
+          <a href="sale.html">Sale</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
-                  <a href="deals.html">
+                  <a href="sale.html">
                     <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
@@ -255,7 +262,7 @@
                               <hr>
                               <p>final markdowns</p>
                           </div>
-                      </div>
+                    </div>
                     </a>
                 </div>
               </div>
@@ -267,57 +274,89 @@
 
     <!-- Chairs Section -->
 
-    <div id="main" class="product-list-section">
+    <div id="breadcrumb">
       <ul class="breadcrumb">
-        <li><a href="products.html">All Products</a></li>
+        <li><a href="furniture.html">Furniture</a></li>
         <li><a href="living.html">Living Room</a></li>
         <li>Chairs</li>
       </ul>
+    </div>
+      
+    <div id="main" class="product-list-section">
 
-      <div class="product-list">
+      <div class="product__list">
 
+        <div class="product__list__item">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View details</h4>
+              </div>
+              <img src="resources/img/chairs/basket-chair.jpg" alt="basket chair">
+            </div>
+          
+            <div class="product__list__item--description">
+              <h3>Basket Chair</h3>
+              <div class="product__list__item--price">$139</div>
+            </div>
+          </a>
+            
+        </div>
 
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/chairs/basket-chair.jpg">
-          </div>
-          <div class="description">
-            <h3>Basket Chair</h3>
-            <span class="price">$139</span>
-          </div>
-        </a>
+        <div class="product__list__item">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View details</h4>
+              </div>
+              <img src="resources/img/chairs/orange-chair.jpg" alt="orange chair">
+            </div>
+              
+            <div class="product__list__item--description">
+              <h3>Orange Chair</h3>
+              <div class="product__list__item--price">$229</div>
+            </div>
+          </a>
+          
+        </div>
 
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/chairs/orange-chair.jpg">
-          </div>
-          <div class="description">
-            <h3>Orange Chair</h3>
-            <span class="price">$229</span>
-          </div>
-        </a>
+        <div class="product__list__item">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View details</h4>
+              </div>
+            <img src="resources/img/chairs/yellow-chair.jpg" alt="yellow chair">
+            </div>
+              
+            <div class="product__list__item--description">
+              <h3>Yellow Chair<sup class="price--hot">Clearance!</sup></h3>
+              <div class="product__list__item--price price--hot">$189
+                <sub class="price__sale">$109</sub>
+              </div>
+            </div>
+          </a>
+            
+        </div>
 
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/chairs/yellow-chair.jpg">
-          </div>
-          <div class="description">
-            <h3>Yellow Chair</h3>
-            <span class="price">$189</span>
-          </div>
-        </a>
-
-        <a href="#" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/chairs/white-chair.jpg">
-          </div>
-          <div class="description">
-            <h3>White Chair</h3>
-            <span class="price">$99</span>
-          </div>
-        </a>
+        <div class="product__list__item">
+          <a href="#" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View details</h4>
+              </div>
+              <img src="resources/img/chairs/white-chair.jpg" alt="white chair">
+            </div>
+              
+            <div class="product__list__item--description">
+              <h3>White Chair</h3>
+              <div class="product__list__item--price">$99</div>
+            </div>
+          </a>
+        </div>
 
       </div>
+        
     </div>
 
     <!-- Footer -->
