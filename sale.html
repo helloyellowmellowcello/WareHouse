@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WareHouse</title>
+  <title>WareHouse | Sale</title>
+    
+<!-- CSS -->
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/sale.css">
+    
+<!-- Fonts/Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<!-- Scripts -->
+  <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="/resources/script/script.js"></script>
+  
 </head>
 <body>
   <div class="container">
@@ -21,7 +31,7 @@
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
-        <a href="#" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="wishlist.html" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
         <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
       </div>
     </header>
@@ -118,7 +128,7 @@
           </div>
       </div>
       <div class="dropdown">
-          <a href="#">Accessories</a>
+          <a href="accessories.html">Accessories</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column">
@@ -135,7 +145,7 @@
                   <a href="#"><h4>Waste Bins</h4></a>
               </div>
               <div class="dropdown__content__row__column">
-                <a href="#"><h3>Mirrors &amp; Clocks</h3></a>
+                <a href="#"><h3>Mirrors + Clocks</h3></a>
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
@@ -201,7 +211,7 @@
             </div>
           </div>
       </div>
-      <a href="#">Collections</a>
+      <a href="collections.html">Collections</a>
       <div class="dropdown">
           <a href="sale.html">Sale</a>
           <div class="dropdown__content">
@@ -209,7 +219,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                   <a href="sale.html">
-                    <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/sale/zen-cabinet__thumbnail.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -224,7 +234,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -254,7 +264,7 @@
               <div class="dropdown__content__row__column" id="column--sale--rightmost">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/ashwood-dining-table.jpg" alt="ashwood dining table">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/ashwood-dining-table.jpg" alt="ashwood dining table">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -272,11 +282,19 @@
       <a href="about.html">Our Story</a>
     </nav>
 
-    <!-- Deals Section -->
+    <!-- Sale Section -->
 
-    <div id="main" class="product-list-section">
-      <h1>Sale</h1>
-
+    <div id="main">
+      <div class="hero">
+        <div class="hero--text">
+          <h1>Sale</h1>
+            <p>
+              Up to 35% off storewide!
+            </p>
+        </div>
+      </div>
+        
+    <div class="product-list-section">
       <div class="product__list">
         <div class="product__list__item">
           <a href="#" class="image-container">
@@ -284,11 +302,15 @@
               <div class="image-container--mask">
                 <h4>View details</h4>
               </div>
-              <img src="resources/img/deals/wooden-spoons.jpg" alt="wooden spoons">
+              <img src="resources/img/sale/wooden-spoons.jpg" alt="wooden spoons">
             </div>
               
             <div class="product__list__item--description">
               <h3>Rustic Spoon 7 pc<sup class="price--hot">Sale!</sup></h3>
+              <div class="product__list__item--icons">
+                <span id="heart"><a href=" "><i class="far fa-heart fa-2x"></i><i id="heart--liked" class="fas fa-heart fa-2x"></i></a></span>
+                <span id="addtocart"><a href=" "><i class="fas fa-cart-plus fa-2x"></i></a></span>
+              </div>
               <div class="product__list__item--price price--hot">$89
                 <sub class="price__sale">$109</sub>
               </div>
@@ -303,11 +325,15 @@
               <div class="image-container--mask">
                 <h4>View details</h4>
               </div>
-              <img src="resources/img/deals/midcen-console.jpg" alt="midcentury console">
+              <img src="resources/img/sale/midcen-console.jpg" alt="midcentury console">
             </div>
               
             <div class="product__list__item--description">
               <h3>Mid Century Console<sup class="price--display">Last piece!</sup></h3>
+              <div class="product__list__item--icons">
+                <span id="heart"><a href=" "><i class="far fa-heart fa-2x"></i><i id="heart--liked" class="fas fa-heart fa-2x"></i></a></span>
+                <span id="addtocart"><a href=" "><i class="fas fa-cart-plus fa-2x"></i></a></span>
+              </div>
               <div class="product__list__item--price price--hot">$229
                 <sub class="price__sale">$350</sub>
               </div>
@@ -327,6 +353,10 @@
               
             <div class="product__list__item--description">
               <h3>Yellow Chair<sup class="price--hot">Clearance!</sup></h3>
+              <div class="product__list__item--icons">
+                <span id="heart"><a href=" "><i class="far fa-heart fa-2x"></i><i id="heart--liked" class="fas fa-heart fa-2x"></i></a></span>
+                <span id="addtocart"><a href=" "><i class="fas fa-cart-plus fa-2x"></i></a></span>
+              </div>
               <div class="product__list__item--price price--hot">$189
                 <sub class="price__sale">$229</sub>
               </div>
@@ -341,11 +371,15 @@
               <div class="image-container--mask">
                 <h4>View details</h4>
               </div>
-              <img src="resources/img/deals/pottery.jpg" alt="pottery">
+              <img src="resources/img/sale/pottery.jpg" alt="pottery">
             </div>
               
             <div class="product__list__item--description">
               <h3>Ceramic Pottery<sup class="price--hot">Sale!</sup></h3>
+              <div class="product__list__item--icons">
+                <span id="heart"><a href=" "><i class="far fa-heart fa-2x"></i><i id="heart--liked" class="fas fa-heart fa-2x"></i></a></span>
+                <span id="addtocart"><a href=" "><i class="fas fa-cart-plus fa-2x"></i></a></span>
+              </div>
               <div class="product__list__item--price price--hot">$49
                 <sub class="price__sale">$79</sub>
               </div>
@@ -355,7 +389,7 @@
         </div>
 
       </div>
-        
+      </div>
     </div>
 
     <!-- Footer -->
@@ -383,7 +417,7 @@
           <li class="footer__main--links">
           <h4>Get to know us</h4>
             <a href="about.html">Our Story</a>
-            <a href="#">The Team</a>
+            <a href="about.html#theteam">The Team</a>
             <a href="#">Testimonials</a>
             <a href="#">Investor Relations</a>
           </li>

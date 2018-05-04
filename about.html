@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WareHouse</title>
+  <title>WareHouse | About Us</title>
+
+<!-- CSS -->
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/about.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
+
+<!-- Fonts/Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<!-- Scripts -->
+  <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+    
 </head>
 <body>
   <div class="container">
@@ -23,7 +30,7 @@
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
-        <a href="#" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="wishlist.html" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
         <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
       </div>
     </header>
@@ -120,7 +127,7 @@
           </div>
       </div>
       <div class="dropdown">
-          <a href="#">Accessories</a>
+          <a href="accessories.html">Accessories</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column">
@@ -137,7 +144,7 @@
                   <a href="#"><h4>Waste Bins</h4></a>
               </div>
               <div class="dropdown__content__row__column">
-                <a href="#"><h3>Mirrors &amp; Clocks</h3></a>
+                <a href="#"><h3>Mirrors + Clocks</h3></a>
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
@@ -203,7 +210,7 @@
             </div>
           </div>
       </div>
-      <a href="#">Collections</a>
+      <a href="collections.html">Collections</a>
       <div class="dropdown">
           <a href="sale.html">Sale</a>
           <div class="dropdown__content">
@@ -211,7 +218,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                   <a href="sale.html">
-                    <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/sale/zen-cabinet__thumbnail.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -226,7 +233,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -256,7 +263,7 @@
               <div class="dropdown__content__row__column" id="column--sale--rightmost">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/ashwood-dining-table.jpg" alt="ashwood dining table">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/ashwood-dining-table.jpg" alt="ashwood dining table">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -277,91 +284,234 @@
     <!-- About Section -->
 
     <div id="main" class="about">
-      <h1>THE WAREHOUSE STORY</h1>
+      <h1>THE <img src="resources/img/warehouse-logo-black.svg" alt="WareHouse"> STORY</h1>
       <div class="about__story">
         <p>
-          In 1934, Frances and Linda Ware started a furniture store in their
+          <span>I</span>n 1934, Frances and Linda Ware started a furniture store in their
           hometown of Jackson, MI. The sisters continued the family tradition
           of building furniture, but their entrepreneurial spirit led them to
-          start selling their creations. In the post-war housing boom, WareHouse
+          start selling their creations. In the post-war housing boom, WareHouse&#174;
           expanded across the mid-west to become a trusted name in home furnishings.
         </p>
         <p>
-          Today, WareHouse has locations across Continental U.S., providing contemporary designer furniture but still
+          Today, WareHouse&#174; has locations across Continental United States, providing contemporary designer furniture but still
           retaining that small, hometown feel. We are currently helmed by our Founders' capable successors and daughters, Frances Christiansen and Linda Wright.
         </p>
         <p>
           Whether you are buying your first couch, re-modeling your kitchen, or moving to a new city, we're here to help you decorate the home of your dreams!
         </p>
+          <hr id="about--hr"><span id="about--hr--symbol">&#167;</span>
       </div>
+        
       <h2>Craftsman creations at WareHouse prices</h2>
       <div class="about__points">
         <ul class="about__points--list">
-        <li class="about__points--list__item">
-          <span class="icon-stack fa-2x">
-            <i class="fas fa-warehouse icon-stack-3x"></i>
-            <div>
-            <i class="fas fa-hand-holding-usd fa-inverse icon-stack-2x" id="icon-stack-standout"></i>
+          <li class="about__points--list__item">
+            <span class="icon-stack fa-2x">
+              <i class="fas fa-warehouse icon-stack-3x"></i>
+              <div>
+              <i class="fas fa-hand-holding-usd fa-inverse icon-stack-2x"></i>
+              </div>
+            </span>
+            <div class="about__points--list--caption">
+              <h3>Straight from the Production Floor</h3>
+              <p>
+               By bringing you furniture direct from our in-house workshops &amp; warehouses,
+               <br>
+                  we cut out the middlemen and can pass on cost-savings to our customers.
+              </p>
             </div>
-          </span>
-          <div class="about__points--list--caption">
-            <h3>Straight from the Production Floor</h3>
-            <p>
-             By bringing you furniture direct from our in-house workshops &amp; warehouses, we cut out the middlemen and can pass on cost-savings to our customers.
-            </p>
-          </div>
-        </li>
-        <li class="about__points--list__item">
-          <span class="icon-stack fa-2x">
-            <i class="fas fa-cogs fa-flip-horizontal icon-stack-2x" id="fa-cogs--position"></i>
-            <i class="fas fa-couch icon-stack-3x"></i>
-            <i class="fas fa-paint-brush fa-inverse fa-rotate-180 icon-stack-1x" id="fa-paint-brush--position"></i>
-          </span>
-          <div class="about__points--list--caption">
-            <h3>Combining Technology with Artistry</h3>
-            <p>
-             Every detail designed with care. Every byte powered by engineering wizardry. Giving you the best of both worlds.
-            </p>
-          </div>
-        </li>
-        <li class="about__points--list__item">
-          <span class="icon-stack fa-2x">
-            <i class="fas fa-shipping-fast icon-stack-3x"></i>
-            <i class="fas fa-wrench fa-inverse icon-stack-2x"></i>
-          </span>
-          <div class="about__points--list--caption">
-            <h3>Free Assembly &amp; Delivery</h3>
-            <p>
-             For orders with a total value of SGD 300 and above.
-            </p>
-          </div>
-        </li>
-        <li class="about__points--list__item">
-          <span class="icon-stack fa-2x">
-            <i class="fas fa-undo-alt fa-flip-horizontal icon-stack-3x"></i>
-            <span class="icon-stack-1x">30</span>
-            <i class="far fa-calendar-check icon-stack-1x" id="fa-calendar-check--position"></i>
-          </span>
-          <div class="about__points--list--caption">
-            <h3>30-Day Returns Guaranteed</h3>
-            <p>
-             Changed your mind? Bring it back within 30-Days from your purchase date. No questions asked.
-            </p>
-          </div>
-        </li>
+          </li>
+          <li class="about__points--list__item">
+            <span class="icon-stack fa-2x">
+              <i class="fas fa-cogs fa-flip-horizontal icon-stack-2x" id="fa-cogs--position"></i>
+              <i class="fas fa-couch icon-stack-3x"></i>
+              <i class="fas fa-paint-brush fa-inverse fa-rotate-180 icon-stack-1x" id="fa-paint-brush--position"></i>
+            </span>
+            <div class="about__points--list--caption">
+              <h3>Combining Technology with Artistry</h3>
+              <p>
+               Every detail designed with care. Every byte powered by engineering wizardry.
+               <br>
+                  Giving you the best of both worlds.
+              </p>
+            </div>
+          </li>
+          <li class="about__points--list__item">
+            <span class="icon-stack fa-2x">
+              <i class="fas fa-shipping-fast icon-stack-3x"></i>
+              <i class="fas fa-wrench fa-inverse icon-stack-2x"></i>
+            </span>
+            <div class="about__points--list--caption">
+              <h3>Free Assembly &amp; Delivery</h3>
+              <p>
+               For orders with a total value of USD 300 and above.
+              </p>
+            </div>
+          </li>
+          <li class="about__points--list__item">
+            <span class="icon-stack fa-2x">
+              <i class="fas fa-undo-alt fa-flip-horizontal icon-stack-3x"></i>
+              <span class="icon-stack-1x price--hot">30</span>
+              <i class="far fa-calendar-check icon-stack-1x" id="fa-calendar-check--position"></i>
+            </span>
+            <div class="about__points--list--caption">
+              <h3>30-Day Returns Guaranteed</h3>
+              <p>
+               Changed your mind? Bring it back within 30-Days from your purchase date.
+               <br>
+                  No questions asked.
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
-      <h2>Authentic. Heritage. Exquisite Workmanship.</h2>
+        
       <div class="about__localcraft">
-        <p>
-          We are proud to support and be part of the American studio craft movement that promotes quality furniture made by local craft makers and artisans. Each piece is hand-made to perfection using best-in-class practices and sustainable, wear-resistant materials from top-notch suppliers.
-        </p>
+        <ul class="about__localcraft--list">
+          <li class="about__localcraft--list__imgblock">
+              <div class="imgblock--img" alt="Craftsman carving a furniture project"></div>
+          </li>
+          <li class="about__localcraft--list__text">
+            <h2>Authentic. Heritage. Exquisite Workmanship.</h2>
+            <p>
+              We are proud to support and be part of the American studio craft movement that promotes quality furniture made by local craft makers and artisans. Each piece is hand-made to perfection using best-in-class practices and sustainable, wear-resistant materials from top-notch suppliers.
+            </p>
+          </li>
+        </ul>
       </div>
-        <blockquote><i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>Buying a piece of WareHouse furniture is about falling in love with an idea or a beautiful story.<i class="fas fa-quote-right fa-3x fa-pull-right fa-border"></i></blockquote>
-        <span>- Linda Wright</span>
+        
+      <div class="about__quote">
+        <blockquote>
+            <i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
+              <p>Buying a piece of WareHouse furniture is about falling in love with an idea or a beautiful story.
+              </p>
+            <i class="fas fa-quote-right fa-3x fa-pull-right fa-border"></i></blockquote>
+              <br>
+        <div id="lindawright">- Linda Wright</div>
+      </div>
+        
+        <hr id="about--hr"><span id="about--hr--symbol">&#167;</span>
+        
+      <div class="about__team" id="theteam">
+        <h2>The Team</h2>
+          <ul class="about__team__members">
+            <li id="frances" class="about__team__members--list">
+              <div class="about__team__members--list__imgblock">
+                <img src="resources/img/about/frances_christiansen.jpg" alt="Portrait of Frances Christiansen">
+              </div>
+              <div class="about__team__members__text">
+                <h3>Frances Christiansen</h3>
+                <h4>Chief Executive Officer</h4>
+              </div>
+            </li>
+              
+            <li id="linda" class="about__team__members--list">
+              <div class="about__team__members--list__imgblock">
+                <img src="resources/img/about/linda_wright.jpg" alt="Portrait of Linda Wright">
+              </div>
+              <div class="about__team__members__text">
+                <h3>Linda Wright</h3>
+                <h4>Chief Product Officer</h4>
+              </div>
+            </li>
+              
+            <li id="christopher" class="about__team__members--list">
+              <div class="about__team__members--list__imgblock">
+                <img src="resources/img/about/christopher_howe.PNG" alt="Portrait of Christopher Howe">
+              </div>
+              <div class="about__team__members__text">
+                <h3>Christopher Howe</h3>
+                <h4>Head of Technology &amp; User Experience Design</h4>
+              </div>
+            </li>
+            
+            <li id="johnnie" class="about__team__members--list">
+              <div class="about__team__members--list__imgblock">
+                <img src="resources/img/about/johnnie_forrest.jpg" alt="Portrait of Johnnie Forrest">
+              </div>
+              <div class="about__team__members__text">
+                <h3>Johnnie Forrest</h3>
+                <h4>Head of Operations &amp; Showroom</h4>
+              </div>
+            </li>
+              
+            <li id="riley" class="about__team__members--list">
+              <div class="about__team__members--list__imgblock">
+                <img src="resources/img/about/riley_stewart.jpg" alt="Portrait of Riley Stewart">
+              </div>
+              <div class="about__team__members__text">
+                <h3>Riley Stewart</h3>
+                <h4>Head of Customer Happiness</h4>
+              </div>
+            </li>
+              
+            <li id="george" class="about__team__members--list">
+              <div class="about__team__members--list__imgblock">
+                <img src="resources/img/about/george_barrington.jpg" alt="Portrait of George Barrington">
+              </div>
+              <div class="about__team__members__text">
+                <h3>George Barrington</h3>
+                <h4>Head of Marketing</h4>
+              </div>
+            </li>
+          </ul>
+          
+        <h2>Our stable of Designers</h2>
+          <ul class="about__team__designers">
+            <li class="about__team__designers--list">
+              <div class="about__team__designers--list__imgblock" id="warhol" alt="Close-up of Ian Warhol">
+                <a href="#" class="about__team__designers--mask">
+                  <div class="about__team__designers__text">
+                    <h3>Ian Warhol</h3>
+                    <h4>view the collection</h4>
+                  </div>
+                </a>
+              </div>
+            </li>
+              
+            <li class="about__team__designers--list">
+              <div class="about__team__designers--list__imgblock" id="phoebe" alt="Close-up of Phoebe Cummings">
+                <a href="#" class="about__team__designers--mask">
+                  <div class="about__team__designers__text">
+                    <h3>Phoebe Cummings</h3>
+                    <h4>view the collection</h4>
+                  </div>
+                </a>
+              </div>
+            </li>
+              
+            <li class="about__team__designers--list">
+              <div class="about__team__designers--list__imgblock" id="nelly" alt="Close-up of Nelly Tilsbury">
+                <a href="#" class="about__team__designers--mask">
+                  <div class="about__team__designers__text">
+                    <h3>Nelly Tilbury</h3>
+                    <h4>view the collection</h4>
+                  </div>
+                </a>
+              </div>
+            </li>
+              
+            <li class="about__team__designers--list">
+              <div class="about__team__designers--list__imgblock" id="ren" alt="Close-up of Ren London">
+                <a href="#" class="about__team__designers--mask">
+                  <div class="about__team__designers__text">
+                    <h3>Ren London</h3>
+                    <h4>view the collection</h4>
+                  </div>
+                </a>
+              </div>
+            </li>
+              
+          </ul>
+          
+      </div>
+        
+        <hr id="about--hr"><span id="about--hr--symbol">&#167;</span>
+        
       <div class="join">
-        <h3>Join Our Team</h3>
-        <a href="jobs.html" class="button">View Our Job Listings</a>
+        <h2>Join Us</h2>
+        <a href="jobs.html" class="button">View Job Listings</a>
       </div>
     </div>
 
@@ -390,7 +540,7 @@
           <li class="footer__main--links">
           <h4>Get to know us</h4>
             <a href="about.html">Our Story</a>
-            <a href="#">The Team</a>
+            <a href="about.html#theteam">The Team</a>
             <a href="#">Testimonials</a>
             <a href="#">Investor Relations</a>
           </li>

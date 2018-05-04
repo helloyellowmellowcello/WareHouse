@@ -5,17 +5,36 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
-  color: hsla(0, 0%, 100%, 1);
+  text-align: left;
+  color: var(--vivid-white);
+  position: relative;
 }
 
-.hero h2 {
-  padding-top: 10rem;
-  color: hsla(0, 100%, 100%, 1);
-  font-family: Helvetica;
-  font-size: inherit;
-  font-weight: bold;
-  text-align: center;
+.hero--text {
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, .4);
+  padding: 2rem 0;
+  position: absolute;
+  top: 6%;
+  width: 100%;
+}
+
+.hero--text h1 {
+  color: var(--pure-white);
+  font-family: 'Lora', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  padding-left: 5rem;
+}
+
+.hero--text p {
+  margin-top: 3rem;
+  font-size: 1.35rem;
+  padding-left: 5rem;
+}
+
+.hero--text span {
+  font-weight: 300;
 }
 
 .product {
@@ -23,7 +42,7 @@
 }
 
 .product h2 {
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-size: inherit;
 }
 

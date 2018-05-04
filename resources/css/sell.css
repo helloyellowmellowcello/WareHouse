@@ -7,9 +7,8 @@
   padding: 3.75rem 7rem 18.75rem 7rem;
 }
 
-.sell h3 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+.sell h1 {
+  padding-bottom: 1rem;
 }
 
 form {
@@ -47,15 +46,16 @@ textarea {
   justify-content: flex-start;
 }
 
-.sgd {
+.usd {
   padding: 5px 10px 0 20px;
   color: #999;
   font-weight: 700;
   line-height: 2.5;
-  border: 1px solid #ccc;
+  border: 1px solid var(--dark-grey);
   border-right: 0;
   border-radius: 5px 0 0 5px;
   width: 50px;
+  background-color: var(--light-grey);
 }
 
 .InputAddOn {

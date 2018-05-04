@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WareHouse</title>
+  <title>WareHouse | Jobs</title>
+
+<!-- CSS -->
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/jobs.css">
+
+<!-- Fonts/Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<!-- Scripts -->
+  <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+    
 </head>
 <body>
   <div class="container">
@@ -22,7 +30,7 @@
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
-        <a href="#" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="wishlist.html" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
         <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
       </div>
     </header>
@@ -119,7 +127,7 @@
           </div>
       </div>
       <div class="dropdown">
-          <a href="#">Accessories</a>
+          <a href="accessories.html">Accessories</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column">
@@ -136,7 +144,7 @@
                   <a href="#"><h4>Waste Bins</h4></a>
               </div>
               <div class="dropdown__content__row__column">
-                <a href="#"><h3>Mirrors &amp; Clocks</h3></a>
+                <a href="#"><h3>Mirrors + Clocks</h3></a>
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
@@ -202,7 +210,7 @@
             </div>
           </div>
       </div>
-      <a href="#">Collections</a>
+      <a href="collections.html">Collections</a>
       <div class="dropdown">
           <a href="sale.html">Sale</a>
           <div class="dropdown__content">
@@ -210,7 +218,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                   <a href="sale.html">
-                    <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/sale/zen-cabinet__thumbnail.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -225,7 +233,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -255,7 +263,7 @@
               <div class="dropdown__content__row__column" id="column--sale--rightmost">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/ashwood-dining-table.jpg" alt="ashwood dining table">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/ashwood-dining-table.jpg" alt="ashwood dining table">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -276,7 +284,7 @@
     <!-- Job List Section -->
 
     <div id="main" class="jobs">
-      <h3>Jobs</h3>
+      <h1>Jobs</h1>
 
       <!-- Job Search Bar -->
 
@@ -327,39 +335,39 @@
 
       <h3>Recently Posted</h3>
       <div class="job-list">
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Director, Showroom Experience</h4>
           <span>Chicago, IL</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Senior Manager, Showroom Experience</h4>
           <span>Springfield, MO</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Executive Assistant, Human Resources</h4>
           <span>Cleveland, OH</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Marketing Manager, Digital Acquisition</h4>
           <span>Jackson, MI</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Senior Software Engineer, Technology</h4>
           <span>Silicon Valley, CA</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Principal Researcher, Product Development</h4>
           <span>Jackson, MI</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Software Engineer, Technology</h4>
           <span>New York, NY</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Staff Engineer, Technology</h4>
           <span>New York, NY</span>
         </div>
-        <div class="job">
+        <div class="job-list__posting">
           <h4>Director of Data Engineering, Technology</h4>
           <span>Silicon Valley, CA</span>
         </div>
@@ -392,7 +400,7 @@
           <li class="footer__main--links">
           <h4>Get to know us</h4>
             <a href="about.html">Our Story</a>
-            <a href="#">The Team</a>
+            <a href="about.html#theteam">The Team</a>
             <a href="#">Testimonials</a>
             <a href="#">Investor Relations</a>
           </li>

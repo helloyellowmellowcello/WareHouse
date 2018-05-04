@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WareHouse</title>
+  <title>WareHouse | Cart</title>
+
+<!-- CSS -->
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/cart.css">
+
+<!-- Fonts/Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<!-- Scripts -->
+  <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+  
 </head>
 <body>
   <div class="container">
@@ -22,7 +30,7 @@
       </div>
       <div class="menu__user">
         <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
-        <a href="#" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="wishlist.html" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
         <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
       </div>
     </header>
@@ -119,7 +127,7 @@
           </div>
       </div>
       <div class="dropdown">
-          <a href="#">Accessories</a>
+          <a href="accessories.html">Accessories</a>
           <div class="dropdown__content">
             <div class="dropdown__content__row">
               <div class="dropdown__content__row__column">
@@ -136,7 +144,7 @@
                   <a href="#"><h4>Waste Bins</h4></a>
               </div>
               <div class="dropdown__content__row__column">
-                <a href="#"><h3>Mirrors &amp; Clocks</h3></a>
+                <a href="#"><h3>Mirrors + Clocks</h3></a>
                   <a href="#"><h4>Mirrors</h4></a>
                   <a href="#"><h4>Clocks</h4></a>
                 <a href="#"><h3>Bedroom</h3></a>
@@ -202,7 +210,7 @@
             </div>
           </div>
       </div>
-      <a href="#">Collections</a>
+      <a href="collections.html">Collections</a>
       <div class="dropdown">
           <a href="sale.html">Sale</a>
           <div class="dropdown__content">
@@ -210,7 +218,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                   <a href="sale.html">
-                    <div class="column__imgblock--wrapper"><img src="resources/img/deals/zen-cabinet.jpg" alt="display cabinet">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/sale/zen-cabinet__thumbnail.jpg" alt="display cabinet">
                     </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -225,7 +233,7 @@
               <div class="dropdown__content__row__column" id="column--sale">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -255,7 +263,7 @@
               <div class="dropdown__content__row__column" id="column--sale--rightmost">
                 <div class="column__imgblock">
                     <a href="#">
-                      <div class="column__imgblock--wrapper"><img src="resources/img/deals/ashwood-dining-table.jpg" alt="ashwood dining table">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/ashwood-dining-table.jpg" alt="ashwood dining table">
                       </div>
                     <div class="column__imgblock--mask">
                       <div class="column__imgblock__content">
@@ -280,62 +288,80 @@
 
     <div class="shopping-cart">
 
-        <div class="row">
-          <div class="image-container">
-            <img src="resources/img/cart/white-console.jpg">
-          </div>
+        <div class="shopping-cart__row">
+          <a href="#"><i class="fas fa-times-circle fa-3x"></i></a>
+          <div class="shopping-cart__row--border">
+            <a href="#" class="shopping-cart__row--link">
+              <div class="image-container">
+                <img src="resources/img/cart/white-console.jpg" alt="white console">
+              </div>
 
-          <div class="description">
-            <h3>White Console</h3>
-            <br>
-            <span class="price">$499</span>
-          </div>
-
-          <div>
-            Quantity <input type="number" name="Quantity" placeholder="1">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="image-container">
-            <img src="resources/img/cart/yellow-chair.jpg">
-          </div>
-
-          <div class="description">
-            <h3>Yellow Chair</h3>
-            <br>
-            <span class="price">$189</span>
-          </div>
-
-          <div>
-            Quantity <input type="number" name="Quantity" placeholder="1">
+              <div class="product__list__item--description">
+                <h3>White Console</h3>
+                <br>
+                <span class="product__list__item--price">$499</span>
+              </div>
+            </a>
+              
+            <div class="shopping-cart__row--quantity">
+              <span>Quantity</span> <input type="number" name="Quantity" placeholder="1" min="1" step="1">
+            </div>
           </div>
         </div>
 
-        <div class="row" id="no-border">
-          <div class="image-container">
-            <img src="resources/img/cart/wire-stool.jpg">
-          </div>
+        <div class="shopping-cart__row">
+            <a href="#"><i class="fas fa-times-circle fa-3x"></i></a>
+          <div href="#" class="shopping-cart__row--border">
+            <a href="#" class="shopping-cart__row--link">
+              <div class="image-container">
+                <img src="resources/img/cart/yellow-chair.jpg" alt="yellow chair">
+              </div>
 
-          <div class="description">
-            <h3>Wire Stool</h3>
-            <br>
-            <span class="price">$75</span>
-          </div>
-
-            <div>
-            Quantity <input type="number" name="Quantity" placeholder="1">
+              <div class="product__list__item--description">
+                <h3>Yellow Chair<sup class="price--hot">Clearance!</sup></h3>
+                <br>
+                <span class="product__list__item--price price--hot">$189</span>
+                  <sub class="price__sale">$229</sub>
+              </div>
+            </a>
+            
+            <div class="shopping-cart__row--quantity">
+              <span>Quantity</span> <input type="number" name="Quantity" placeholder="1" min="1" step="1">
+            </div>
           </div>
         </div>
 
-      <div class="total">
-        <div class="description">
+        <div class="shopping-cart__row" id="no-border">
+        <a href="#"><i class="fas fa-times-circle fa-3x"></i></a>
+          <div href="#" class="shopping-cart__row--border">
+            <a href="#" class="shopping-cart__row--link">
+              <div class="image-container">
+                <img src="resources/img/cart/wire-stool.jpg" alt="wire stool">
+              </div>
+
+              <div class="product__list__item--description">
+                <h3>Wire Stool</h3>
+                <br>
+                <span class="product__list__item--price">$75</span>
+              </div>
+            </a>
+              
+            <div class="shopping-cart__row--quantity">
+              <span>Quantity</span> <input type="number" name="Quantity" placeholder="1" min="1" step="1">
+            </div>
+          </div>
+        </div>
+
+      <div class="shopping-cart__total">
+        <div class="total__description">
           <h3>Total</h3>
-          <span class="price">$763.00</span>
+          <span class="total--price">$763.00</span>
         </div>
         <a href="" class="button">Checkout</a>
       </div>
+        
   </div>
+        
 </div>
 
     <!-- Footer -->
@@ -363,7 +389,7 @@
           <li class="footer__main--links">
           <h4>Get to know us</h4>
             <a href="about.html">Our Story</a>
-            <a href="#">The Team</a>
+            <a href="about.html#theteam">The Team</a>
             <a href="#">Testimonials</a>
             <a href="#">Investor Relations</a>
           </li>

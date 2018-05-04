@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse | Sofas | Grey Sofa</title>
+    
+<!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/cart.css">
+
+<!-- Fonts/Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<!-- Scripts -->
+  <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="/resources/script/script.js"></script>
+    
+    <!-- Header -->
+
+    <header>
+      <div class="image-container">
+        <a href="index.html"><img src="resources/img/warehouse-logo.svg" class="logo--background"></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search for items">
+        <a href="#" class="icon"><img src="resources/img/search.svg"></a>
+      </div>
+      <div class="menu__user">
+        <a href="#" class="menu__user--icon"><i class="far fa-user-circle fa-2x"></i></a>
+        <a href="wishlist.html" class="menu__user--icon"><i class="far fa-heart fa-2x"></i></a>
+        <a href="cart.html" class="menu__user--icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+    </header>
+    <nav class="nav__main">
+      <div class="dropdown">
+          <a href="furniture.html">Furniture</a>
+          <div class="dropdown__content">
+            <div class="dropdown__content__row">
+              <div class="dropdown__content__row__column">
+              <a href="living.html"><h3>Living Room</h3></a>
+                <a href="sofas.html"><h4>Sofas</h4></a>
+                <a href="chairs.html"><h4>Chairs</h4></a>
+                <a href="#"><h4>Footstools, Ottomans &amp; Poufs</h4></a>
+                <a href="tables.html"><h4>Tables</h4></a>
+                <a href="#"><h4>TV Consoles</h4></a>
+                <a href="#"><h4>Shelves &amp; Cabinets</h4></a>
+              <a href="#"><h3>Entryway</h3></a>
+                <a href="#"><h4>Entryway Storage</h4></a>
+                <a href="#"><h4>Shoe Racks</h4></a>
+                <a href="#"><h4>Console Tables</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="#"><h3>Dining Room</h3></a>
+                  <a href="#"><h4>Dining Tables</h4></a>
+                  <a href="#"><h4>Dining Chairs</h4></a>
+                  <a href="#"><h4>Dining Benches</h4></a>
+                  <a href="#"><h4>Stools &amp; Barstools</h4></a>
+                  <a href="#"><h4>Shelves &amp; Cabinets</h4></a>
+                <a href="#"><h3>Kitchen</h3></a>
+                  <a href="#"><h4>Kitchen Cabinetry</h4></a>
+                <a href="#"><h3>Bedroom</h3></a>
+                  <a href="#"><h4>Mattresses</h4></a>
+                  <a href="#"><h4>Bed Frames</h4></a>
+                  <a href="#"><h4>Bedside Tables</h4></a>
+                  <a href="#"><h4>Dressers &amp; Sideboards</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="#"><h3>Office + Storage</h3></a>
+                  <a href="#"><h4>Desks</h4></a>
+                  <a href="#"><h4>Office Chairs</h4></a>
+                  <a href="#"><h4>Bookshelves</h4></a>
+                  <a href="#"><h4>Office Storage</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Seating &amp; Swings</h4></a>
+                  <a href="#"><h4>Surfaces</h4></a>
+                  <a href="#"><h4>Sheds</h4></a>
+                <a href="#"><h3>Bundle &amp; Save</h3></a>
+                  <a href="#"><h4>Living Room</h4></a>
+                  <a href="#"><h4>Dining Room</h4></a>
+                  <a href="#"><h4>Bedroom</h4></a>
+              </div>
+              <div class="dropdown__content__row__column" id="column--rightmost">
+                <div class="column__imgblock">
+                  <a href="#">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/showroom.jpg" alt="furniture showroom">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Visit our Showroom</label>
+                        <hr>
+                        <p>book your visit</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column__imgblock">
+                  <a href="#">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/faq.jpg" alt="question mark">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Questions?</label>
+                        <hr>
+                        <p>view FAQ</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column__imgblock">
+                  <a href="sell.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/trade_partners.jpg" alt="team comparing design patterns on tile squares">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Merchants &amp; Contractors</label>
+                        <hr>
+                        <p>become a Partner</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="dropdown">
+          <a href="accessories.html">Accessories</a>
+          <div class="dropdown__content">
+            <div class="dropdown__content__row">
+              <div class="dropdown__content__row__column">
+              <a href="#"><h3>Fabric</h3></a>
+                <a href="#"><h4>Area &amp; Outdoor Rugs</h4></a>
+                <a href="#"><h4>Floor &amp; Door Mats</h4></a>
+                <a href="#"><h4>Cushions</h4></a>
+                <a href="#"><h4>Throws &amp; Blankets</h4></a>
+                <a href="#"><h4>Curtains &amp; Rods</h4></a>
+                <a href="#"><h3>Home Organisation</h3></a>
+                  <a href="#"><h4>Trays, Baskets &amp; Boxes</h4></a>
+                  <a href="#"><h4>Magazine Racks</h4></a>
+                  <a href="#"><h4>Wardrobe Organisers</h4></a>
+                  <a href="#"><h4>Waste Bins</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="#"><h3>Mirrors + Clocks</h3></a>
+                  <a href="#"><h4>Mirrors</h4></a>
+                  <a href="#"><h4>Clocks</h4></a>
+                <a href="#"><h3>Bedroom</h3></a>
+                  <a href="#"><h4>Bedsheets &amp; Duvets</h4></a>
+                  <a href="#"><h4>Pillows &amp; Bolsters</h4></a>
+                  <a href="#"><h4>Mattresses</h4></a>
+                <a href="#"><h3>Bathroom</h3></a>
+                  <a href="#"><h4>Towels &amp; Bath Mats</h4></a>
+                  <a href="#"><h4>Accessories</h4></a>
+                  <a href="#"><h4>Laundry Baskets</h4></a>
+                <a href="#"><h3>Dining Room</h3></a>
+                  <a href="#"><h4>Table &amp; Drink Ware</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="#"><h3>Kitchen</h3></a>
+                  <a href="#"><h4>Cookware &amp; Bakeware</h4></a>
+                  <a href="#"><h4>Kitchen Organisers</h4></a>
+                  <a href="#"><h4>Kitchen Home Cleaning</h4></a>
+                <a href="#"><h3>Patio</h3></a>
+                  <a href="#"><h4>Accessories</h4></a>
+                <div class="column__imgblock" id="decorative_accents">
+                  <a href="#">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/decorative_accents.jpg" alt="botanical pots of succulents">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Decorative Accents</label>
+                        <hr>
+                        <p>view more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--rightmost">
+                <div class="column__imgblock" id="lighting">
+                  <a href="#">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/edison_lightbulbs.jpg" alt="hanging edison lightbulbs">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Lighting</label>
+                        <hr>
+                        <p>view more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column__imgblock" id="tools">
+                  <a href="#">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/tools.jpg" alt="workman tools on a table">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Tools</label>
+                        <hr>
+                        <p>view more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="collections.html">Collections</a>
+      <div class="dropdown">
+          <a href="sale.html">Sale</a>
+          <div class="dropdown__content">
+            <div class="dropdown__content__row">
+              <div class="dropdown__content__row__column" id="column--sale">
+                <div class="column__imgblock">
+                  <a href="sale.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/sale/zen-cabinet__thumbnail.jpg" alt="display cabinet">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>On Sale</label>
+                        <hr>
+                        <p>shop now</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--sale">
+                <div class="column__imgblock">
+                    <a href="#">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
+                      </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Bundle Up &amp; Save More</label>
+                        <hr>
+                        <p>buy bundles</p>
+                      </div>
+                    </div>
+                    </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--sale">
+                <div class="column__imgblock">
+                    <a href="#">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/display-pieces.jpg" alt="items and knick-knacks in a blue display cabinet and box shelf">
+                      </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                              <label>Display Pieces</label>
+                              <hr>
+                              <p>shop now</p>
+                          </div>
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--sale--rightmost">
+                <div class="column__imgblock">
+                    <a href="#">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/ashwood-dining-table.jpg" alt="ashwood dining table">
+                      </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                              <label>Clearance</label>
+                              <hr>
+                              <p>final markdowns</p>
+                          </div>
+                    </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="about.html">Our Story</a>
+    </nav>
+
+    <!-- Product Section -->
+
+    <div id="breadcrumb">
+      <ul class="breadcrumb">
+        <li><a href="furniture.html">Furniture</a></li>
+        <li><a href="living.html">Living Room</a></li>
+        <li><a href="sofas.html">Sofas</a></li>
+        <li>Grey Sofa</li>
+      </ul>
+    </div>
+      
+    <div id="main" class="item__container">
+
+      <div class="item__container__image">
+        <img src="resources/img/sofas/grey-sofa.jpg" alt="grey sofa">
+      </div>
+      <div class="item__container__intro">
+        <div class="item__container__intro__title">
+          <h1>Grey Sofa</h1>
+          <h4>From the <a href="#">Warhol Collection</a></h4>
+            <div class="product__list__item--icons">
+              <span id="heart"><a href=" "><i class="far fa-heart fa-2x"></i><i id="heart--liked" class="fas fa-heart fa-2x"></i></a></span>
+            </div>
+        </div>
+        <div class="item__container__intro--price">$499</div>
+          
+        <div class="item__container__intro__color">
+          <h3>Available Colors</h3>
+          <ul>
+            <li class="item__container__intro__color--grey selector-border"></li>
+            <li class="item__container__intro__color--lightgrey selector-border"></li>
+          </ul>
+        </div>
+          
+        <div class="item__container__intro__delivery">
+          <i class="fas fa-info-circle"></i>
+          <h3>Delivery</h3>
+          <h4>Between Jun 9 - Jun 26</h4>
+          <span><i class="fas fa-truck"></i>Free Delivery &amp; Installation with purchase over $300</span>
+        </div>
+        
+        <div class="shopping-cart__row--quantity">
+          <span>Quantity</span> <input type="number" name="Quantity" placeholder="1" min="1" step="1">
+        </div>
+      </div>
+          
+      <div class="item__container__info">
+        <div class="item__container__info__description">
+          <h2>Description</h2>
+            <p>
+              The Grey Sofa is a modern take on the classic wingback armchair. It has an outstanding silhouette, allowing you to use it anywhere. Every strong line, button and detail has been meticulously crafted and perfected to ensure it looks brilliant from every angle. The large, embracing backrest has been buttoned-backed beautifully creating that perfect balance between functionality and aesthetics. If you're looking for a statement sofa with exceptional back support, then this is for you.
+            </p>
+        </div>
+        <div class="item__container__info__dimensions">
+          <h2>Product Dimension</h2>
+            <h3>Dimension:</h3>
+              <h4>W190 x D90 x H105cm</h4>
+            <h3>Seating Depth:</h3>
+              <h4>58cm</h4>
+            <h3>Leg Height:</h3>
+              <h4>20cm</h4>
+            <h3>Seatable Width:</h3>
+              <h4>152cm</h4>
+            <h3>Seating Height:</h3>
+              <h4>46cm</h4>
+        </div>
+        <div class="item__container__info__materials">
+          <h2>Materials &amp; Info</h2>
+            <h3>Frame:</h3>
+              <h4>Solid Wood Frame</h4>
+            <h3>Fabric Composition:</h3>
+              <h4>100% Polyester</h4>
+            <h3>Leg:</h3>
+              <h4>Solid Beech Wood</h4>
+            <h3>Firmness:</h3>
+              <h4>Medium</h4>
+            <h3>Filling:</h3>
+              <h4>Pocket Spring with Foam</h4>
+            <h3>Suspension:</h3>
+              <h4>Webbing</h4>
+            <h3>Cover Type:</h3>
+              <h4>Removable Seat Cushion Cover</h4>
+            <h3>Warranty:</h3>
+              <h4>Frame 3 Years, Foam &amp; Cover 1 Year</h4>
+            <h3>Filling:</h3>
+              <h4>Pocket Spring with Foam</h4>
+        </div>
+          
+      </div>
+        
+      <div class="item__container__reviews">
+        
+      </div>
+      
+      <div class="item__container__shopsimilar">
+        <div class="item__container__shopsimilar__set">
+        </div>
+          
+        <div class="item__container__shopsimilar__recomendations">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <section class="footer__main">
+        <div class="footer__main__left-column">
+          <a href="index.html"><img src="resources/img/home.png" alt="WareHouse logo"></a>
+            <address>
+              <h4>Speak to us</h4>
+              <i class="fas fa-envelope"></i> <a href="mailto:hello@warehouse.com" target="_blank">hello@warehouse.com</a>
+                <br />
+              <i class="fas fa-phone fa-flip-horizontal"></i> <a href="tel:1-601-123-4567">+1 601 123-4567</a>
+            </address>
+        </div>
+        <ul>
+          <li class="footer__main--links">
+          <h4>Let us help you</h4>
+            <a href="#">Contact us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Our Showroom</a>
+            <a href="#">Delivery</a>
+            <a href="#">Warranty &amp; Returns</a>
+          </li>
+          <li class="footer__main--links">
+          <h4>Get to know us</h4>
+            <a href="about.html">Our Story</a>
+            <a href="about.html#theteam">The Team</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Investor Relations</a>
+          </li>
+          <li class="footer__main--links">
+          <h4>Work with us</h4>
+            <a href="sell.html">Trade Partners</a>
+            <a href="#">CSR</a>
+            <a href="#">Events &amp; Fundraisers</a>
+            <a href="jobs.html">Jobs</a>
+          </li>
+        </ul>
+      </section>
+        <hr>
+      <section class="footer__sub">
+          <span>&copy; 2018 WareHouse</span>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>
