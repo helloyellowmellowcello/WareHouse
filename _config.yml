@@ -21,7 +21,7 @@ email: jasmineleecheowching@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Capstone Project for Codecademy Intensive Pro Building UIs course. Objective is to redesign
   the UI elements and layout of a furniture retailer called WareHouse, to include features users would expect.
-baseurl: "/WareHouse_FurnitureRetail" # the subpath of your site, e.g. /blog
+baseurl: "https://helloyellowmellowcello.github.io/WareHouse/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  helloyellowmellowcello
