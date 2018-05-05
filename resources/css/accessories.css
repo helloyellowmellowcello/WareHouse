@@ -1,0 +1,57 @@
+.product__list {
+  display: grid;
+  min-width: 1189px;
+  grid-template-areas: 'fabric fabric organisation'
+                         'mirrorsclocks mirrorsclocks organisation'
+                         'bedroom bathroom dining-room'
+                         'kitchen decorativeaccents patio'
+                         'lighting decorativeaccents tools';
+}
+
+#fabric {
+  grid-area: fabric;
+}
+
+#organisation {
+  grid-area: organisation;
+  max-height: 731px;
+}
+
+#decorativeaccents {
+  grid-area: decorativeaccents;
+  max-height: 731px;
+}
+
+#lightingcategory {
+  grid-area: lighting;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#mirrorsclocks {
+  grid-area: mirrorsclocks;
+}
+
+#bedroom {
+  grid-area: bedroom;
+}
+
+#bathroom {
+  grid-area: bathroom;
+}
+
+#dining-room {
+  grid-area: dining-room;
+}
+
+#kitchen {
+  grid-area: kitchen;
+}
+
+#patio {
+  grid-area: patio;
+}
+
+#toolscategory {
+  grid-area: tools;
+}

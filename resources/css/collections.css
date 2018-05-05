@@ -1,0 +1,60 @@
+.product__list {
+  display: grid;
+  min-width: 1189px;
+  grid-template: repeat(5, 1fr) / 100%;
+  grid-gap: 0;
+}
+
+#warhol {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#phoebe {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#nelly {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+#ren {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+
+#linda {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+
+.product__list__category img {
+  width: 100%;
+}
+
+.image-container__wrapper {
+  position: relative;
+}
+
+.image-container--mask h3 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  text-align: center;
+  color: var(--vivid-white);
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: .5s linear;
+}
+
+#h3--right {
+  top: 50%;
+  left: 80%;
+}
+
+.product__list__category:hover .image-container--mask > h3 {
+  transform: scale(1.1);
+  letter-spacing: 0.05em;
+}

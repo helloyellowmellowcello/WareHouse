@@ -42,9 +42,9 @@ table {
   border-spacing: 0;
 }
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menulist;
 }
 input:focus,
 textarea:focus,

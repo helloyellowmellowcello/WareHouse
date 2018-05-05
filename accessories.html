@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse | Accessories</title>
+
+<!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/accessories.css">
+
+<!-- Fonts/Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<!-- Scripts -->
+  <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+    
+</head>
+<body>
+  <div class="container" role="document">
+
+    <!-- Header -->
+
+    <header role="banner">
+      <div class="image-container" role="img" aria-label="WareHouse Logo">
+        <a href="index.html"><img src="resources/img/warehouse-logo.svg" class="logo--background" alt="WareHouse logo"></a>
+      </div>
+      <div class="search-bar" role="search">
+        <input type="text" name="search" placeholder="Search for items">
+        <a href="#" class="icon" aria-label="Search Button"><img src="resources/img/search.svg"></a>
+      </div>
+      <div class="menu__user" role="group" aria-label="User Menu Icons">
+        <a href="underconstruction.html" class="menu__user--icon" aria-label="My Account"><i class="far fa-user-circle fa-2x"></i></a>
+        <a href="wishlist.html" class="menu__user--icon" aria-label="My Wishlist"><i class="far fa-heart fa-2x"></i></a>
+        <a href="cart.html" class="menu__user--icon" aria-label="My Cart"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+    </header>
+    <nav class="nav__main" role="navigation" aria-label="Main Navigation">
+      <div class="dropdown">
+          <a href="furniture.html" id="furniture">Furniture</a>
+          <div class="dropdown__content" aria-labelledby="Furniture" role="list">
+            <div class="dropdown__content__row">
+              <div class="dropdown__content__row__column">
+              <a href="living.html"><h3>Living Room</h3></a>
+                <a href="sofas.html"><h4>Sofas</h4></a>
+                <a href="chairs.html"><h4>Chairs</h4></a>
+                <a href="underconstruction.html"><h4>Footstools, Ottomans &amp; Poufs</h4></a>
+                <a href="tables.html"><h4>Tables</h4></a>
+                <a href="underconstruction.html"><h4>TV Consoles</h4></a>
+                <a href="underconstruction.html"><h4>Shelves &amp; Cabinets</h4></a>
+              <a href="underconstruction.html"><h3>Entryway</h3></a>
+                <a href="underconstruction.html"><h4>Entryway Storage</h4></a>
+                <a href="underconstruction.html"><h4>Shoe Racks</h4></a>
+                <a href="underconstruction.html"><h4>Console Tables</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="underconstruction.html"><h3>Dining Room</h3></a>
+                  <a href="underconstruction.html"><h4>Dining Tables</h4></a>
+                  <a href="underconstruction.html"><h4>Dining Chairs</h4></a>
+                  <a href="underconstruction.html"><h4>Dining Benches</h4></a>
+                  <a href="underconstruction.html"><h4>Stools &amp; Barstools</h4></a>
+                  <a href="underconstruction.html"><h4>Shelves &amp; Cabinets</h4></a>
+                <a href="underconstruction.html"><h3>Kitchen</h3></a>
+                  <a href="underconstruction.html"><h4>Kitchen Cabinetry</h4></a>
+                <a href="underconstruction.html"><h3>Bedroom</h3></a>
+                  <a href="underconstruction.html"><h4>Mattresses</h4></a>
+                  <a href="underconstruction.html"><h4>Bed Frames</h4></a>
+                  <a href="underconstruction.html"><h4>Bedside Tables</h4></a>
+                  <a href="underconstruction.html"><h4>Dressers &amp; Sideboards</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="underconstruction.html"><h3>Office + Storage</h3></a>
+                  <a href="underconstruction.html"><h4>Desks</h4></a>
+                  <a href="underconstruction.html"><h4>Office Chairs</h4></a>
+                  <a href="underconstruction.html"><h4>Bookshelves</h4></a>
+                  <a href="underconstruction.html"><h4>Office Storage</h4></a>
+                <a href="underconstruction.html"><h3>Patio</h3></a>
+                  <a href="underconstruction.html"><h4>Seating &amp; Swings</h4></a>
+                  <a href="underconstruction.html"><h4>Surfaces</h4></a>
+                  <a href="underconstruction.html"><h4>Sheds</h4></a>
+                <a href="underconstruction.html"><h3>Bundle &amp; Save</h3></a>
+                  <a href="underconstruction.html"><h4>Living Room</h4></a>
+                  <a href="underconstruction.html"><h4>Dining Room</h4></a>
+                  <a href="underconstruction.html"><h4>Bedroom</h4></a>
+              </div>
+              <div class="dropdown__content__row__column" id="column--rightmost">
+                <div class="column__imgblock">
+                  <a href="underconstruction.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/showroom.jpg" alt="furniture showroom">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Visit our Showroom</label>
+                        <hr>
+                        <p>book your visit</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column__imgblock">
+                  <a href="underconstruction.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/faq.jpg" alt="question mark">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Questions?</label>
+                        <hr>
+                        <p>view FAQ</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column__imgblock">
+                  <a href="sell.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/trade_partners.jpg" alt="team comparing design patterns on tile squares">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Merchants &amp; Contractors</label>
+                        <hr>
+                        <p>become a Partner</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="dropdown">
+          <a href="accessories.html" id="accessories">Accessories</a>
+          <div class="dropdown__content" aria-labelledby="Accessories" role="list">
+            <div class="dropdown__content__row">
+              <div class="dropdown__content__row__column">
+              <a href="underconstruction.html"><h3>Fabric</h3></a>
+                <a href="underconstruction.html"><h4>Area &amp; Outdoor Rugs</h4></a>
+                <a href="underconstruction.html"><h4>Floor &amp; Door Mats</h4></a>
+                <a href="underconstruction.html"><h4>Cushions</h4></a>
+                <a href="underconstruction.html"><h4>Throws &amp; Blankets</h4></a>
+                <a href="underconstruction.html"><h4>Curtains &amp; Rods</h4></a>
+                <a href="underconstruction.html"><h3>Home Organisation</h3></a>
+                  <a href="underconstruction.html"><h4>Trays, Baskets &amp; Boxes</h4></a>
+                  <a href="underconstruction.html"><h4>Magazine Racks</h4></a>
+                  <a href="underconstruction.html"><h4>Wardrobe Organisers</h4></a>
+                  <a href="underconstruction.html"><h4>Waste Bins</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="underconstruction.html"><h3>Mirrors + Clocks</h3></a>
+                  <a href="underconstruction.html"><h4>Mirrors</h4></a>
+                  <a href="underconstruction.html"><h4>Clocks</h4></a>
+                <a href="underconstruction.html"><h3>Bedroom</h3></a>
+                  <a href="underconstruction.html"><h4>Bedsheets &amp; Duvets</h4></a>
+                  <a href="underconstruction.html"><h4>Pillows &amp; Bolsters</h4></a>
+                  <a href="underconstruction.html"><h4>Mattresses</h4></a>
+                <a href="underconstruction.html"><h3>Bathroom</h3></a>
+                  <a href="underconstruction.html"><h4>Towels &amp; Bath Mats</h4></a>
+                  <a href="underconstruction.html"><h4>Accessories</h4></a>
+                  <a href="underconstruction.html"><h4>Laundry Baskets</h4></a>
+                <a href="underconstruction.html"><h3>Dining Room</h3></a>
+                  <a href="underconstruction.html"><h4>Table &amp; Drink Ware</h4></a>
+              </div>
+              <div class="dropdown__content__row__column">
+                <a href="underconstruction.html"><h3>Kitchen</h3></a>
+                  <a href="underconstruction.html"><h4>Cookware &amp; Bakeware</h4></a>
+                  <a href="underconstruction.html"><h4>Kitchen Organisers</h4></a>
+                  <a href="underconstruction.html"><h4>Kitchen Home Cleaning</h4></a>
+                <a href="underconstruction.html"><h3>Patio</h3></a>
+                  <a href="underconstruction.html"><h4>Accessories</h4></a>
+                <div class="column__imgblock" id="decorative_accents">
+                  <a href="underconstruction.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/decorative_accents.jpg" alt="botanical pots of succulents">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Decorative Accents</label>
+                        <hr>
+                        <p>view more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--rightmost">
+                <div class="column__imgblock" id="lighting">
+                  <a href="underconstruction.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/edison_lightbulbs.jpg" alt="hanging edison lightbulbs">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Lighting</label>
+                        <hr>
+                        <p>view more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column__imgblock" id="tools">
+                  <a href="underconstruction.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/tools.jpg" alt="workman tools on a table">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Tools</label>
+                        <hr>
+                        <p>view more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="collections.html" aria-label="Collections">Collections</a>
+      <div class="dropdown">
+          <a href="sale.html" id="sale">Sale</a>
+          <div class="dropdown__content" aria-labelledby="Sale" role="list">
+            <div class="dropdown__content__row">
+              <div class="dropdown__content__row__column" id="column--sale">
+                <div class="column__imgblock">
+                  <a href="sale.html">
+                    <div class="column__imgblock--wrapper"><img src="resources/img/sale/zen-cabinet__thumbnail.jpg" alt="display cabinet">
+                    </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>On Sale</label>
+                        <hr>
+                        <p>shop now</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--sale">
+                <div class="column__imgblock">
+                    <a href="underconstruction.html">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/bundle_sofatable.jpg" alt="grey sofa and nesting tables">
+                      </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                        <label>Bundle Up &amp; Save More</label>
+                        <hr>
+                        <p>buy bundles</p>
+                      </div>
+                    </div>
+                    </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--sale">
+                <div class="column__imgblock">
+                    <a href="underconstruction.html">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/display-pieces.jpg" alt="items and knick-knacks in a blue display cabinet and box shelf">
+                      </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                              <label>Display Pieces</label>
+                              <hr>
+                              <p>shop now</p>
+                          </div>
+                      </div>
+                    </a>
+                </div>
+              </div>
+              <div class="dropdown__content__row__column" id="column--sale--rightmost">
+                <div class="column__imgblock">
+                    <a href="underconstruction.html">
+                      <div class="column__imgblock--wrapper"><img src="resources/img/sale/ashwood-dining-table.jpg" alt="ashwood dining table">
+                      </div>
+                    <div class="column__imgblock--mask">
+                      <div class="column__imgblock__content">
+                              <label>Clearance</label>
+                              <hr>
+                              <p>final markdowns</p>
+                          </div>
+                    </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="about.html" aria-label="About Us">Our Story</a>
+    </nav>
+
+    <!-- Accessories Section -->
+
+    <main id="main" class="product-list-section" role="main" aria-labelledby="Accessories">
+      <h1 id="accessories" role="heading">Accessories</h1>
+      <div class="product__list" role="grid">
+        
+        <div id="fabric" class="product__list__category" aria-label="Fabric">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/fabric.jpg" alt="fabric">
+            </div>
+          </a>
+            
+        </div>
+        <div id="organisation" class="product__list__category" aria-label="Home Organisation">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/homeorganisation.jpg" alt="home organisation">
+            </div>
+          </a>
+            
+        </div>
+        <div id="mirrorsclocks" class="product__list__category" aria-label="Mirrors + Clocks">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/mirrorsclocks.jpg" alt="mirrors and clocks">
+            </div>
+          </a>
+            
+        </div>
+        <div id="bedroom" class="product__list__category" aria-label="Bedroom">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/bedroom.jpg" alt="bedroom">
+            </div>
+          </a>
+            
+        </div>
+        <div id="bathroom" class="product__list__category" aria-label="Bathroom">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/bathroom.jpg" alt="bathroom">
+            </div>
+          </a>
+          
+        </div>
+        <div id="dining-room" class="product__list__category" aria-label="Dining Room">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/dining-room.jpg" alt="dining room">
+            </div>
+          </a>
+            
+        </div>
+        <div id="kitchen" class="product__list__category" aria-label="Kitchen">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/kitchen.jpg" alt="kitchen">
+            </div>
+          </a>
+            
+        </div>
+        <div id="decorativeaccents" class="product__list__category" aria-label="Decorative Accents">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/decorative-accents.jpg" alt="decorative accents">
+            </div>
+          </a>
+          
+        </div>
+        <div id="patio" class="product__list__category" aria-label="Patio">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/patio.jpg" alt="patio">
+            </div>
+          </a>
+            
+        </div>
+        <div id="lightingcategory" class="product__list__category" aria-label="Lighting">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/lighting.jpg" alt="lighting">
+            </div>
+          </a>
+          
+        </div>
+        <div id="toolscategory" class="product__list__category" aria-label="Tools">
+          <a href="underconstruction.html" class="image-container">
+            <div class="image-container__wrapper">
+              <div class="image-container--mask">
+                <h4>View more</h4>
+              </div>
+              <img src="resources/img/categories/tools.jpg" alt="tools">
+            </div>
+          </a>
+            
+        </div>
+          
+      </div>
+        
+      <a href="#" class="button">View All</a>
+        
+    </main>
+
+    <!-- Footer -->
+
+    <footer role="contentinfo">
+      <section class="footer__main" role="region" aria-label="Main Footer Section">
+        <div class="footer__main__left-column" role="group">
+          <a href="index.html"><img src="resources/img/home.png" alt="WareHouse logo"></a>
+            <address>
+              <h4>Speak to us</h4>
+              <i class="fas fa-envelope"></i> <a href="mailto:hello@warehouse.com" target="_blank">hello@warehouse.com</a>
+                <br />
+              <i class="fas fa-phone fa-flip-horizontal"></i> <a href="tel:1-601-123-4567">+1 601 123-4567</a>
+            </address>
+        </div>
+        <ul role="list">
+          <li class="footer__main--links" aria-labelledby="Getting Help">
+          <h4 id="gettinghelp">Let us help you</h4>
+            <a href="underconstruction.html">Contact us</a>
+            <a href="underconstruction.html">FAQ</a>
+            <a href="underconstruction.html">Our Showroom</a>
+            <a href="underconstruction.html">Delivery</a>
+            <a href="underconstruction.html">Warranty &amp; Returns</a>
+          </li>
+          <li class="footer__main--links" aria-labelledby="Information About WareHouse">
+          <h4 id="informationaboutwarehouse">Get to know us</h4>
+            <a href="about.html">Our Story</a>
+            <a href="about.html#theteam">The Team</a>
+            <a href="greysofa.html#reviews">Testimonials</a>
+            <a href="underconstruction.html">Investor Relations</a>
+          </li>
+          <li class="footer__main--links" aria-labelledby="Collaboration">
+          <h4 id="collaboration">Work with us</h4>
+            <a href="sell.html">Trade Partners</a>
+            <a href="underconstruction.html">CSR</a>
+            <a href="underconstruction.html">Events &amp; Fundraisers</a>
+            <a href="jobs.html">Jobs</a>
+          </li>
+        </ul>
+      </section>
+        <hr>
+      <section class="footer__sub" role="region" aria-label="Sub Footer Section">
+          <span>&copy; 2018 WareHouse</span>
+          <a href="underconstruction.html">Privacy</a>
+          <a href="underconstruction.html">Terms</a>
+      </section>
+    </footer>
+      
+  </div>
+</body>
+</html>

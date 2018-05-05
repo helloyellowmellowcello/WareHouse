@@ -1,2 +1,5 @@
 .DS_Store
 Thumbs.db
+color_scheme.txt
+resources/img/images_notused/*
+resources/css/filter.css
