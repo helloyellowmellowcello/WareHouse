@@ -1,10 +1,19 @@
-Pompeian Pink - #D87C6C rgba(216, 124, 108, 255)
-High Blue - #4CADDF rgba(76, 173, 223, 255)
-Natural White - #EEECE5 rgba(238, 236, 299, 255)
-Vivid White - #F7F8F4 rgba(247, 248, 244, 255)
-Light Grey - hsla(0, 0%, 98%, 1);
-Middle Grey - hsla(0, 0%, 93%, 1);
-Dark Grey - hsla(0, 0%, 89%, 1);
-Heading Black - #333;
-Main Text Gray -#5b5b5b;
-Highlight Gray - #8e8c8c;
+/* Site-Wide Styles */
+
+:root {
+  --pompeian-pink: #D87C6C; /*rgba(216, 124, 108, 255)*/
+  --high-blue: #4CADDF; /*rgba(76, 173, 223, 255)*/
+  --natural-white: #EEECE5; /*rgba(238, 236, 299, 255)*/
+  --vivid-white: #F7F8F4; /*rgba(247, 248, 244, 255)*/
+  --pure-white: hsla(0, 0%, 100%, 1);
+  --light-grey: hsla(0, 0%, 98%, 1);
+  --middle-grey: hsla(0, 0%, 91%, 1);
+  --dark-grey: #ccc;
+  --border-grey: hsla(0, 0%, 85%, 1);
+  --heading-black: #333;
+  --main-text-gray: #5b5b5b;
+  --dark-gray: hsla(0, 0%, 29%, 1);
+  --highlight-gray: #8e8c8c;
+  --crimson-red: #d23b3f;
+  --tomato: #ff6347;
+}
