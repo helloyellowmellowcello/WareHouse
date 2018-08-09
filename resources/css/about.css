@@ -244,22 +244,22 @@ h3 {
 
 #christopher {
   grid-area: christopher;
-  
+
 }
 
 #johnnie {
   grid-area: johnnie;
-  
+
 }
 
 #riley {
   grid-area: riley;
-  
+
 }
 
 #george {
   grid-area: george;
- 
+
 }
 
 .about__team__members--list {
@@ -345,7 +345,7 @@ h3 {
   left: 23.5%;
   text-align: center;
   letter-spacing: 0.2em;
-  color: var(--high-blue);
+  color: var(--vivid-white);
   transition: .2s;
 }
 

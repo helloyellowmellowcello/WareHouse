@@ -666,6 +666,11 @@ nav a:hover {
   max-height: 145px;
 }
 
+.column__imgblock:hover .column__imgblock--wrapper img {
+  webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+  filter: blur(1px);
+}
+
 .column__imgblock--mask {
   position: absolute;
   background-color: rgba(0, 0, 0, .4);
@@ -676,7 +681,7 @@ nav a:hover {
   color: var(--pure-white);
 }
 
-.column__imgblock--mask:hover {
+.column__imgblock:hover .column__imgblock--mask {
   background-color: transparent;
   transition: ease-in-out .5s;
 }
@@ -687,26 +692,24 @@ nav a:hover {
   transform: translateY(-50%);
   width: 100%;
   left: 0;
+  padding: 5px 0;
 }
 
-.column__imgblock__content:hover, .column__imgblock__content label:hover, .column__imgblock__content p:hover {
+.column__imgblock:hover .column__imgblock__content, .column__imgblock__content label, .column__imgblock__content p {
   cursor: pointer;
   transform: scale(1.1) translateY(-50%);
   color: var(--pure-white);
   transition: all 0.5s linear;
 }
 
-.column__imgblock__content p:hover {
-  transform: translateY(0);
+.column__imgblock:hover .column__imgblock__content p {
+  transform: translateY(-25%);
+  font-style: italic;
   transition: 0.2s;
 }
 
-.column__imgblock__content:hover {
-  background-color: hsla(0, 0%, 93%, 0.7);
-}
-
-.column__imgblock__content p:hover {
-  font-style: italic;
+.column__imgblock:hover .column__imgblock__content {
+  background-color: hsla(0, 0%, 20%, 0.4);
 }
 
 .column__imgblock__content > hr {
