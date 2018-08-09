@@ -137,6 +137,10 @@ select {
   padding: 1rem;
 }
 
+select {
+  min-height: : 75px;
+}
+
 /*option {
   line-height: 1.25rem;
 }*/
