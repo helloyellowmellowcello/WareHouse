@@ -63,7 +63,7 @@
   font-weight: 700;
 }
 
-input {
+.shopping-cart__row--quantity input {
   width: 3rem;
   padding-left: 1rem;
   margin-left: 1rem;

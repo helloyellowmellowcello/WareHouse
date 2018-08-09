@@ -662,7 +662,7 @@ nav a:hover {
 }
 
 .column__imgblock--wrapper img {
-  min-width: 100%;
+  min-width: 160%;
   max-height: 145px;
 }
 
