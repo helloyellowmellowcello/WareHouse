@@ -572,7 +572,7 @@ nav a:hover {
 .dropdown__content {
   display: none;
   position: absolute;
-  background-color: hsla(0, 0%, 98%, .9);
+  background-color: var(--vivid-white);
   width: 80%;
   left: 120px;
   top: 136px;
