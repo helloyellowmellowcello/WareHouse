@@ -138,12 +138,8 @@ select {
 }
 
 select {
-  min-height: : 75px;
+  height: 53px;
 }
-
-/*option {
-  line-height: 1.25rem;
-}*/
 
 
 /* Reusable Component - Button */
