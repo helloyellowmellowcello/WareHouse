@@ -27,7 +27,7 @@
 
 .item__container__intro {
   background-color: var(--pure-white);
-  padding: 20px;
+  padding: 2rem;
   border-radius: 2px;
   border: solid 1px var(--border-grey);
 }
@@ -98,7 +98,7 @@
 #info-icon--postion {
   position: absolute;
   top: -5%;
-  left: 97%;
+  left: 98%;
 }
 
 .item__container__intro__blurb {
@@ -132,6 +132,7 @@
 
 .item__container__intro__blurb__warranty > h4 {
   display: inline;
+  margin-left: 5px;
 }
 
 #check-cricle--position {
@@ -250,11 +251,11 @@
   text-align: center;
   background-color: var(--high-blue);
   margin-bottom: 3.75rem;
-  padding-top: 1rem;
+  padding: 2rem 0;
 }
 
 .item__container__shopsimilar__set, .item__container__shopsimilar__recomendations {
-  
+  margin-top: 2rem;
 }
 
 .product__list__item--description {

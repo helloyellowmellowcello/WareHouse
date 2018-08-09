@@ -29,12 +29,12 @@
   border-radius: 50%;
 }
 
-.wishlist__row a i {
+.wishlist__row .fa-times-circle {
   color: var(--tomato);
   transition: ease-in-out .2s;
 }
 
-.wishlist__row a:hover i {
+.wishlist__row .fa-times-circle:hover {
   color: var(--highlight-gray);
 }
 
@@ -75,14 +75,14 @@ input {
   margin-left: 1rem;
 }
 
-.product__list__item--icons a i {
+.product__list__item--icons i {
   position: none;
   left: 85%;
   top: 60%;
   background-color: transparent;
   border-radius: none;
-  color: var(--middle-grey);
 }
+
 
 @media only screen and (max-width: 1020px) {
   .landing .product-list {

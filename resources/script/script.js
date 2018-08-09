@@ -14,14 +14,19 @@
 //  });
 //}
 
-//* Like & Add to Cart functions *//
+//* Like & Add-to-Cart Click Function *//
 
 $(document).ready(function() {
-    $('#heart').click(function() {
-        $('#heart--liked').toggle('1000');
-    });
-    $("#heart a").click(function(e) {
-   //do something to stop link # from loading
-        e.stopPropagation();
-    });
+
+  // Specific code for the heart fill toggle
+  $(".product__list__item--icons a .fa-heart").click(function(e) {
+    $(this).toggleClass("far").toggleClass("fas"); // Toggle the filling !
+  });
+
+  // Action when clicking on a link
+  $(".product__list__item--icons a").click(function(e) {
+    e.preventDefault(); // Modified: stop link # from loading
+    $(this).toggleClass("selected"); // Toggle the colored class !
+  });
+
 });
